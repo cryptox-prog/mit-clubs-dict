@@ -1,0 +1,56 @@
+:root {
+  --bg-main: #f9f5d7;
+  --bg-dull: #f9f5d7;
+  --bg-surface: #f2e5bc;
+  --bg-elevated: #ebdbb2;
+
+  --text-primary: #3c3836;
+  --text-secondary: #504945;
+  --text-muted: #665c54;
+
+  /* Accents */
+  --accent-red: #cc241d;
+  --accent-green: #98971a;
+  --accent-yellow: #d79921;
+  --accent-blue: #458588;
+  --accent-purple: #b16286;
+  --accent-aqua: #689d6a;
+  --accent-orange: #d65d0e;
+
+  /* Borders & dividers */
+  --border-subtle: #d5c4a1;
+  --border-strong: #bdae93;
+
+  /* States */
+  --success: var(--accent-green);
+  --warning: var(--accent-yellow);
+  --error: var(--accent-red);
+
+  /* Shadows (very subtle, gruvbox hates heavy shadows) */
+  --shadow-soft: 0 1px 2px rgba(60, 56, 54, 0.08);
+}
+
+
+
+:root {
+    font-family: 'Josefin Sans', system-ui, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+html, body {
+    height: 100dvh;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-main);
+}
+
+main {
+    flex: 1;
+}

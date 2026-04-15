@@ -1,0 +1,67 @@
+.main-container {
+    margin-top: 2rem;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.greeting h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-secondary);
+}
+
+.greeting p {
+    font-weight: normal;
+    color: var(--text-muted);
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.filter-container input {
+    width: 100%;
+    background-color: var(--bg-surface);
+    border: 3px solid var(--border-subtle);
+    font-size: large;
+    font-weight: bold;
+    color: var(--text-secondary);
+    background-image: url("/search-icon.png");
+    background-repeat: no-repeat;
+    background-position: 12px center;
+    background-size: 18px;
+    padding: 8px 12px 8px 42px;
+
+    box-sizing: border-box;
+}
+
+.filter-container input:focus {
+    outline: none;
+    border-color: var(--border-strong);
+}
+
+.filter-container button {
+    border: 3px solid var(--border-subtle);
+    font-size: large;
+    font-weight: bold;
+    color: var(--text-secondary);
+    width: 40px;
+    background-color: var(--bg-surface);
+    border-left: none;
+    cursor: pointer;
+
+    background-image: url("/filter-icon.png");
+    background-size: 23px 23px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.filter-container button:hover {
+    background-color: var(--bg-elevated);
+}
+
+.filter-container button:active {
+    background-color: var(--border-subtle);
+}
