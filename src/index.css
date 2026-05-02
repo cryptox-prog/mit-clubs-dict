@@ -1,33 +1,45 @@
 :root {
-  --bg-main: #f9f5d7;
-  --bg-dull: #f9f5d7;
-  --bg-surface: #f2e5bc;
-  --bg-elevated: #ebdbb2;
+    --text-primary: #3c3836; /* foreground */
+    --bg-main: #f2e5bc; /* background */
+    --bg-dull: #f2e5bc;
+    --bg-surface: #f2e5bc;
+    --bg-elevated: #ebdbb2;
 
-  --text-primary: #3c3836;
-  --text-secondary: #504945;
-  --text-muted: #665c54;
+    --cursor-text: #f2e5bc;
+    --cursor: #3c3836;
+    --selection-text: #f2e5bc;
+    --selection-bg: #3c3836;
 
-  /* Accents */
-  --accent-red: #cc241d;
-  --accent-green: #98971a;
-  --accent-yellow: #d79921;
-  --accent-blue: #458588;
-  --accent-purple: #b16286;
-  --accent-aqua: #689d6a;
-  --accent-orange: #d65d0e;
+    --text-secondary: #504945;
+    --text-muted: #665c54;
 
-  /* Borders & dividers */
-  --border-subtle: #d5c4a1;
-  --border-strong: #bdae93;
+    --accent-black: #f2e5bc;
+    --accent-red: #cc241d;
+    --accent-green: #98971a;
+    --accent-yellow: #d79921;
+    --accent-blue: #458588;
+    --accent-magenta: #b16286;
+    --accent-cyan: #689d6a;
+    --accent-white: #7c6f64;
 
-  /* States */
-  --success: var(--accent-green);
-  --warning: var(--accent-yellow);
-  --error: var(--accent-red);
+    --bright-black: #928374;
+    --bright-red: #9d0006;
+    --bright-green: #79740e;
+    --bright-yellow: #b57614;
+    --bright-blue: #076678;
+    --bright-magenta: #8f3f71;
+    --bright-cyan: #427b58;
+    --bright-white: #3c3836;
 
-  /* Shadows (very subtle, gruvbox hates heavy shadows) */
-  --shadow-soft: 0 1px 2px rgba(60, 56, 54, 0.08);
+    --border-subtle: #d5c4a1;
+    --border-strong: #bdae93;
+
+    --success: var(--accent-green);
+    --warning: var(--accent-yellow);
+    --error: var(--accent-red);
+
+    --link-color: var(--accent-blue);
+    --shadow-soft: 0 1px 2px rgba(60, 56, 54, 0.08);
 }
 
 
@@ -49,6 +61,16 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--bg-main);
+}
+
+/* Cursor & selection visuals */
+body {
+    caret-color: var(--cursor);
+}
+
+::selection {
+    color: var(--selection-text);
+    background: var(--selection-bg);
 }
 
 main {
