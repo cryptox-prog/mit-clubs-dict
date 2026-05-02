@@ -1,0 +1,134 @@
+.filter-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 60;
+}
+
+.filter-dialog {
+    width: 420px;
+    max-width: calc(100% - 32px);
+    background: var(--bg-main);
+    border: 2px solid var(--border-strong);
+    padding: 16px;
+    box-shadow: 0 6px 20px rgba(60, 56, 54, 0.12);
+    color: var(--text-primary);
+    position: relative;
+}
+
+.filter-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-header h3 {
+    margin: 0;
+}
+
+.filter-header .close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-surface);
+    border: 2px solid var(--border-subtle);
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 0;
+}
+
+.filter-section {
+    margin-top: 12px;
+}
+
+.filter-section .options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.option {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--bg-surface);
+    padding: 6px 8px;
+    border: 2px solid var(--border-subtle);
+}
+
+/* Custom checkbox styling to match palette */
+.option input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    display: inline-block;
+    border: 2px solid var(--border-subtle);
+    background: var(--bg-main);
+    box-sizing: border-box;
+}
+
+.option input[type="checkbox"]:checked {
+    background: var(--accent-blue);
+    border-color: var(--accent-blue);
+}
+
+.option input[type="checkbox"]:checked::after {
+    content: '\2713';
+    color: var(--cursor-text);
+    font-size: 14px;
+    font-weight: 800;
+    display: block;
+    text-align: center;
+    line-height: 16px;
+}
+
+.filter-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.btn {
+    background: var(--accent-blue);
+    color: var(--cursor-text);
+    border: 2px solid var(--accent-blue);
+    padding: 8px 12px;
+    border-radius: 0;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 120ms ease, color 120ms ease, transform 80ms ease;
+}
+
+.btn:hover {
+    background: var(--bright-blue);
+    border-color: var(--bright-blue);
+}
+
+.btn:focus {
+    outline: 3px solid rgba(69, 133, 136, 0.12);
+}
+
+.btn.secondary {
+    background: transparent;
+    color: var(--text-secondary);
+    border: 2px solid var(--border-subtle);
+    border-radius: 0;
+    padding: 8px 12px;
+    font-weight: 700;
+}
+
+.btn.secondary:hover {
+    background: var(--bg-elevated);
+}

@@ -1,0 +1,39 @@
+.tabs-root {
+    display: flex;
+    justify-content: center;
+    margin: 0.75rem 0 0.5rem 0;
+}
+
+.tabs {
+    display: inline-flex;
+    background: transparent;
+    box-shadow: var(--shadow-soft);
+}
+
+.tab {
+    background: var(--bg-surface);
+    color: var(--text-secondary);
+    border: 2px solid var(--border-subtle);
+    padding: 10px 22px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    cursor: pointer;
+    outline: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab+.tab {
+    border-left: none;
+}
+
+.tab.active {
+    background: var(--bg-elevated);
+    color: var(--text-primary);
+    border-color: var(--border-strong);
+}
+
+.tab:focus {
+    box-shadow: 0 0 0 3px rgba(69, 133, 136, 0.08);
+}
