@@ -44,3 +44,19 @@
     color: var(--text-secondary);
     margin-left: auto;
 }
+
+@media screen and (max-width: 600px) {
+    .container {
+        justify-content: center;
+        padding-top: 0.55rem;
+        padding-bottom: 0.55rem;
+    }
+
+    .container h1 {
+        display: none;
+    }
+
+    .container h2 {
+        margin: 0;
+    }
+}

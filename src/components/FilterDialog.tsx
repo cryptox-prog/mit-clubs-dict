@@ -35,7 +35,7 @@ const FilterDialog: React.FC<Props> = ({ open, selectedFilters, onApply, onClose
       <div className="filter-dialog">
         <div className="filter-header">
           <h3>Filters</h3>
-          <button className="close" onClick={onClose} aria-label="Close">✕</button>
+          <button className="close" onClick={onClose} aria-label="Close" />
         </div>
 
         <div className="filter-section">

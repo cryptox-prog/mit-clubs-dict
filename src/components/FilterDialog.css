@@ -31,18 +31,40 @@
 
 .filter-header .close {
     position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
+    top: -2px;
+    right: -2px;
+    width: 34px;
+    height: 34px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: var(--bg-surface);
-    border: 2px solid var(--border-subtle);
-    color: var(--text-secondary);
+    background: #cc241d;
+    border: none;
+    color: var(--cursor-text);
     cursor: pointer;
     padding: 0;
+    transition: background-color 120ms ease, transform 80ms ease;
+}
+
+.filter-header .close::after {
+    content: '';
+    width: 22px;
+    height: 22px;
+    -webkit-mask: url('/close-x-icon.svg') no-repeat center;
+    mask: url('/close-x-icon.svg') no-repeat center;
+    -webkit-mask-size: 85% 85%;
+    mask-size: 85% 85%;
+    background-color: currentColor;
+    filter: drop-shadow(0 0 1px currentColor) drop-shadow(0 0 1px currentColor) drop-shadow(0 0 0.8px currentColor);
+}
+
+.filter-header .close:hover {
+    background: #fb4934;
+}
+
+.filter-header .close:active {
+    background: #9d0006;
+    transform: translateY(1px);
 }
 
 .filter-section {

@@ -2,7 +2,7 @@ import React from 'react'
 import './Tabs.css'
 
 type TabsProps = {
-  tabs: string[]
+  tabs: Array<string | { label: string; mobileLabel?: string }>
   selectedIndex?: number
   onChange?: (index: number) => void
 }
@@ -22,16 +22,22 @@ const Tabs: React.FC<TabsProps> = ({ tabs, selectedIndex = 0, onChange }) => {
   return (
     <div className="tabs-root">
       <div className="tabs">
-        {tabs.map((t, i) => (
+        {tabs.map((tab, i) => {
+          const label = typeof tab === 'string' ? tab : tab.label
+          const mobileLabel = typeof tab === 'string' ? tab : tab.mobileLabel || tab.label
+
+          return (
           <button
-            key={t}
+            key={label}
             className={"tab" + (i === active ? ' active' : '')}
+            data-mobile-label={mobileLabel}
             onClick={() => handleClick(i)}
             aria-pressed={i === active}
           >
-            {t}
+            <span>{label}</span>
           </button>
-        ))}
+          )
+        })}
       </div>
     </div>
   )

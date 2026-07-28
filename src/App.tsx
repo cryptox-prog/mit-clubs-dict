@@ -7,7 +7,32 @@ import FilterTags from './components/FilterTags'
 import React from 'react'
 
 function App() {
-    const [selectedTab, setSelectedTab] = React.useState<'Clubs' | 'Events'>('Clubs')
+    type CategoryTab = 'Clubs' | 'Student Projects' | 'Events'
+    type DirectoryCategory = 'Club' | 'Student Project' | 'Event'
+    type DirectoryItem = {
+        id: string
+        name: string
+        subtitle?: string
+        description: string
+        category: DirectoryCategory
+        icon_url: string
+        application_start?: Date
+        application_end: Date
+        event_date?: Date
+        event_end?: Date
+        team_size?: string
+        open_to?: string
+        domains?: string[]
+        application_link?: string
+    }
+
+    const tabs: Array<{ label: CategoryTab; mobileLabel?: string }> = [
+        { label: 'Clubs' },
+        { label: 'Student Projects', mobileLabel: 'SP' },
+        { label: 'Events' },
+    ]
+
+    const [selectedTab, setSelectedTab] = React.useState<CategoryTab>('Clubs')
     const [filtersOpen, setFiltersOpen] = React.useState(false)
     const [filters, setFilters] = React.useState<string[]>([])
     const [searchQuery, setSearchQuery] = React.useState('')
@@ -24,9 +49,9 @@ function App() {
                     <p>Discover and apply to the student organizations of Manipal Institiute of Technology</p>
                 </div>
                 <Tabs
-                    tabs={["Clubs", "Events"]}
-                    selectedIndex={selectedTab === 'Clubs' ? 0 : 1}
-                    onChange={(i) => setSelectedTab(i === 0 ? 'Clubs' : 'Events')}
+                    tabs={tabs}
+                    selectedIndex={tabs.findIndex(tab => tab.label === selectedTab)}
+                    onChange={(i) => setSelectedTab(tabs[i].label)}
                 />
 
                 <div className='filter-container'>
@@ -49,43 +74,62 @@ function App() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', margin:'10px 0px 0px 0px' }}>
                     {/* Cards data */}
                     {(() => {
-                        const items = [
+                        const items: DirectoryItem[] = [
                             {
                                 id: 'club-robotics',
-                                event_name: 'Robotics Recruitment 2026',
-                                club_name: 'Tech Robotics Club',
+                                name: 'Tech Robotics Club',
+                                subtitle: 'Robotics Recruitment 2026',
                                 description: 'Join our club to build amazing robots and participate in national competitions.',
-                                is_event: false,
+                                category: 'Club',
                                 icon_url: 'https://cdn-icons-png.flaticon.com/512/1383/1383267.png',
-                                recruitment_start: new Date('2026-02-01'),
-                                recruitment_end: new Date('2026-02-28'),
+                                application_start: new Date('2026-02-01'),
+                                application_end: new Date('2026-02-28'),
+                                open_to: 'All Students',
                                 domains: ['AI', 'Automation'],
-                                type: 'Club',
                                 application_link: 'https://techrobotics.example.com/apply',
                             },
                             {
+                                id: 'sp-rover',
+                                name: 'Mars Rover Manipal',
+                                subtitle: 'Student Project Recruitment 2026',
+                                description: 'Build rover systems across mechanical design, electronics, autonomy, and software.',
+                                category: 'Student Project',
+                                icon_url: 'https://cdn-icons-png.flaticon.com/512/3212/3212608.png',
+                                application_start: new Date('2026-02-10'),
+                                application_end: new Date('2026-03-05'),
+                                open_to: 'All Students',
+                                domains: ['AI', 'Automation'],
+                                application_link: 'https://marsrover.example.com/apply',
+                            },
+                            {
                                 id: 'event-hackathon',
-                                event_name: 'Hackathon 2026',
-                                club_name: 'Coding Club',
+                                name: 'Hackathon 2026',
+                                subtitle: 'Hosted by Coding Club',
                                 description: 'Participate in a 48-hour coding marathon and showcase your skills.',
-                                is_event: true,
+                                category: 'Event',
                                 icon_url: 'https://cdn-icons-png.flaticon.com/512/2913/2913970.png',
                                 application_start: new Date('2026-02-05'),
                                 application_end: new Date('2026-02-15'),
                                 event_date: new Date('2026-03-01'),
+                                event_end: new Date('2026-03-03'),
+                                team_size: '2 - 4 Members',
+                                open_to: 'All Students',
                                 domains: ['Web', 'Mobile', 'AI'],
-                                type: 'Event',
                                 application_link: 'https://codingclub.example.com/hackathon',
                             },
                             {
                                 id: 'event-photo',
-                                event_name: 'Photography Exhibition',
-                                club_name: 'Arts & Photography Club',
+                                name: 'Photography Exhibition',
+                                subtitle: 'Hosted by Arts & Photography Club',
                                 description: 'Showcase your photography skills in our annual exhibition.',
-                                is_event: true,
+                                category: 'Event',
                                 icon_url: 'https://cdn-icons-png.flaticon.com/512/1383/1383269.png',
+                                event_date: new Date('2026-03-25'),
+                                event_end: new Date('2026-03-25'),
+                                application_end: new Date('2026-03-20'),
+                                team_size: 'Individual',
+                                open_to: 'All Students',
                                 domains: ['Photography', 'Arts'],
-                                type: 'Event',
                                 application_link: 'https://artsclub.example.com/exhibition',
                             },
                         ]
@@ -94,14 +138,15 @@ function App() {
 
                         const filtered = items.filter(item => {
                             // tab filter
-                            if (selectedTab === 'Clubs' && item.is_event) return false
-                            if (selectedTab === 'Events' && !item.is_event) return false
+                            if (selectedTab === 'Clubs' && item.category !== 'Club') return false
+                            if (selectedTab === 'Student Projects' && item.category !== 'Student Project') return false
+                            if (selectedTab === 'Events' && item.category !== 'Event') return false
 
-                            // search filter (match club or event name)
+                            // search filter (match primary or secondary name)
                             if (q) {
-                                const en = (item.event_name || '').toLowerCase()
-                                const cn = (item.club_name || '').toLowerCase()
-                                if (!en.includes(q) && !cn.includes(q)) return false
+                                const name = (item.name || '').toLowerCase()
+                                const subtitle = (item.subtitle || '').toLowerCase()
+                                if (!name.includes(q) && !subtitle.includes(q)) return false
                             }
 
                             // domain filters (match any)
@@ -117,18 +162,18 @@ function App() {
                         return filtered.map(it => (
                             <Card
                                 key={it.id}
-                                event_name={it.event_name}
-                                club_name={it.club_name}
+                                name={it.name}
+                                subtitle={it.subtitle}
                                 description={it.description}
-                                is_event={it.is_event}
+                                category={it.category}
                                 icon_url={it.icon_url}
-                                recruitment_start={it.recruitment_start}
-                                recruitment_end={it.recruitment_end}
                                 application_start={it.application_start}
                                 application_end={it.application_end}
                                 event_date={it.event_date}
+                                event_end={it.event_end}
+                                team_size={it.team_size}
+                                open_to={it.open_to}
                                 domains={it.domains}
-                                type={it.type}
                                 application_link={it.application_link}
                             />
                         ))

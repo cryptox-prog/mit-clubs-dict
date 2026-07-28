@@ -37,3 +37,23 @@
 .tab:focus {
     box-shadow: 0 0 0 3px rgba(69, 133, 136, 0.08);
 }
+
+@media screen and (max-width: 600px) {
+    .tabs {
+        width: 100%;
+    }
+
+    .tab {
+        flex: 1;
+        padding: 10px 8px;
+        font-size: 0.95rem;
+    }
+
+    .tab span {
+        display: none;
+    }
+
+    .tab::after {
+        content: attr(data-mobile-label);
+    }
+}

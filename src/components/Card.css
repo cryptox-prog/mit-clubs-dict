@@ -61,8 +61,54 @@
 }
 
 @media screen and (max-width: 600px) {
+    .card {
+        display: grid;
+        grid-template-columns: 44px minmax(0, 1fr);
+        column-gap: 0.65rem;
+        row-gap: 0.35rem;
+        align-items: start;
+        padding: 0.75rem;
+    }
+
+    .card .icon {
+        width: 44px;
+        height: 44px;
+        grid-row: 1 / span 2;
+    }
+
+    .card .content {
+        display: contents;
+    }
+
+    .card .content h3,
+    .card .content h4.subheading {
+        grid-column: 2;
+        min-width: 0;
+    }
+
+    .card .content h3 {
+        font-size: 1rem;
+        line-height: 1.15;
+    }
+
+    .card .content h4.subheading {
+        margin: 0.05rem 0 0;
+        font-size: 0.85rem;
+        line-height: 1.2;
+    }
+
     .card .content p {
-        visibility: collapse;
+        display: none;
+    }
+
+    .card .content a,
+    .card .content .metadata,
+    .card .content .deadline {
+        grid-column: 1 / -1;
+    }
+
+    .card .content a {
+        margin-top: 0.35rem;
     }
 }
 
@@ -75,6 +121,13 @@
     flex-wrap: wrap;
 }
 
+.card .content .deadline {
+    margin-top: 0.35rem;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
 .card .content a {
     margin-top: 0.5rem;
     text-decoration: none;
@@ -82,4 +135,50 @@
     font-weight: bold;
     text-decoration: underline;
     transition: color 150ms ease, background-color 150ms ease, transform 100ms ease;
+}
+
+.card .details {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        display: grid;
+        grid-template-columns: 80px minmax(0, 1fr) minmax(280px, 34%);
+        align-items: center;
+    }
+
+    .card .details {
+        align-self: stretch;
+        border-left: 2px dashed var(--border-subtle);
+        color: var(--text-secondary);
+        display: flex;
+        flex-direction: column;
+        gap: 0.45rem;
+        justify-content: center;
+        margin: 0;
+        padding: 0.25rem 0 0.25rem 1.25rem;
+    }
+
+    .card .detail-row {
+        display: grid;
+        grid-template-columns: 105px minmax(0, 1fr);
+        gap: 0.8rem;
+        align-items: baseline;
+    }
+
+    .card .detail-row dt {
+        color: var(--text-secondary);
+        font-weight: 700;
+    }
+
+    .card .detail-row dd {
+        color: var(--text-primary);
+        margin: 0;
+        min-width: 0;
+    }
+
+    .card .content .deadline {
+        display: none;
+    }
 }
