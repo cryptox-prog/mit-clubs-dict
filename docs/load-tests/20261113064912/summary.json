@@ -1,0 +1,185 @@
+{
+  "runId": "20261113064912",
+  "finished": true,
+  "stopReason": "Supabase upstream budget reached",
+  "plan": {
+    "runId": "20261113064912",
+    "mode": "gradual-total-visitors",
+    "seed": 1192026,
+    "maxInFlight": 12,
+    "maxUpstreamRequests": 10000,
+    "maxUpstreamBytes": 134217728,
+    "maxClientRequests": 20000,
+    "maxClientBytes": 150994944,
+    "maxAnalyticsEvents": 500,
+    "minimumHostAvailableMiB": 1536,
+    "maxRunSeconds": 1000,
+    "stages": [
+      {
+        "targetUsers": 100,
+        "rps": 10,
+        "workers": 20,
+        "rampSeconds": 10,
+        "maxSeconds": 140
+      },
+      {
+        "targetUsers": 1000,
+        "rps": 18,
+        "workers": 48,
+        "rampSeconds": 15,
+        "maxSeconds": 420
+      },
+      {
+        "targetUsers": 10000,
+        "rps": 18,
+        "workers": 48,
+        "rampSeconds": 20,
+        "maxSeconds": 600
+      }
+    ],
+    "caps": {
+      "server": {
+        "memoryMiB": 384,
+        "cpuPercent": 50,
+        "heapMiB": 192
+      },
+      "tester": {
+        "memoryMiB": 256,
+        "cpuPercent": 50,
+        "heapMiB": 128
+      },
+      "swapMiB": 0,
+      "maxTasksEach": 64
+    },
+    "behavior": {
+      "warmReturningFraction": 0.35,
+      "searchProbability": 0.55,
+      "filterProbability": 0.3,
+      "projectsTabProbability": 0.3,
+      "eventsTabProbability": 0.1,
+      "scrollProbability": 0.35,
+      "visibleIcons": "2–4 plus 2 on some scrolls",
+      "thinkSeconds": "0.3–3.2 between interactions",
+      "analyticsSample": "1 in 100 visitors; load_test=true; at most 500 events"
+    },
+    "caveats": [
+      "Visitor counts are total gradually arriving sessions, not simultaneous users.",
+      "Protocol-level browsing model; no browser rendering/JS cost is benchmarked.",
+      "Warm visitor caches are an explicit assumption, not measured production behavior.",
+      "Search/filter operations are local and do not generate directory requests.",
+      "No accounts, listings, or files are created or edited.",
+      "Only sampled analytics are sent to PostHog; analytics events are synthetic and tagged.",
+      "Cloud remaining monthly usage is not available; this test has its own conservative additive quota.",
+      "No inference that 10000 concurrent users are supported is valid."
+    ]
+  },
+  "results": {
+    "runId": "20261113064912",
+    "stages": [
+      {
+        "targetUsers": 100,
+        "rps": 10,
+        "workers": 20,
+        "rampSeconds": 10,
+        "maxSeconds": 140,
+        "startedAt": "2026-11-13T06:49:15.725Z",
+        "startedUsers": 100,
+        "completedUsers": 99,
+        "abortedUsers": 1,
+        "activeUsers": 0,
+        "peakActiveUsers": 20,
+        "startedRequests": 528,
+        "statuses": {
+          "200": 427,
+          "401": 100,
+          "503": 1
+        },
+        "errors": 1,
+        "transportErrors": 0,
+        "consecutiveErrors": 0,
+        "bytes": 46022367,
+        "returningWarmUsers": 34,
+        "coldUsers": 66,
+        "directoryCacheHits": 52,
+        "iconCacheHits": 187,
+        "modeledAnalyticsEvents": 364,
+        "durationSeconds": 58.26,
+        "finishedAt": "2026-11-13T06:50:13.982Z",
+        "p50Ms": 304.62,
+        "p95Ms": 666.91,
+        "p99Ms": 1112.65
+      },
+      {
+        "targetUsers": 1000,
+        "rps": 18,
+        "workers": 48,
+        "rampSeconds": 15,
+        "maxSeconds": 420,
+        "startedAt": "2026-11-13T06:50:20.108Z",
+        "startedUsers": 317,
+        "completedUsers": 269,
+        "abortedUsers": 48,
+        "activeUsers": 0,
+        "peakActiveUsers": 48,
+        "startedRequests": 1492,
+        "statuses": {
+          "200": 1139,
+          "401": 317,
+          "503": 36
+        },
+        "errors": 36,
+        "transportErrors": 0,
+        "consecutiveErrors": 9,
+        "bytes": 87524397,
+        "returningWarmUsers": 97,
+        "coldUsers": 220,
+        "directoryCacheHits": 155,
+        "iconCacheHits": 572,
+        "modeledAnalyticsEvents": 1066,
+        "durationSeconds": 106.88,
+        "finishedAt": "2026-11-13T06:52:06.986Z",
+        "p50Ms": 299.24,
+        "p95Ms": 714.15,
+        "p99Ms": 7143.31
+      }
+    ],
+    "sampledAnalyticsEvents": 18,
+    "analyticsAccepted": 18,
+    "analyticsFailed": 0,
+    "stopReason": "Supabase upstream budget reached",
+    "totalRequests": 2020,
+    "totalBytes": 133546764,
+    "maxActiveRequests": 12,
+    "rssBytes": 90185728
+  },
+  "server": {
+    "runId": "20261113064912",
+    "upstreamRequests": 2733,
+    "upstreamBytes": 134246549,
+    "upstreamErrors": 6,
+    "budgetStopped": true,
+    "inFlight": 0,
+    "maxInFlight": 12,
+    "rssBytes": 151015424,
+    "heapBytes": 32280000,
+    "eventLoopP99Ms": 20.316159,
+    "cpuPercent": 0.4294982022911371
+  },
+  "serverUnit": {
+    "ActiveState": "active",
+    "Result": "success",
+    "MemoryCurrent": "89866240",
+    "MemoryPeak": "99901440",
+    "CPUUsageNSec": "24223971000",
+    "TasksCurrent": "9",
+    "CPUQuotaPerSecUSec": "500ms",
+    "MemoryMax": "402653184",
+    "MemorySwapMax": "0"
+  },
+  "testerExitCode": 0,
+  "resourcePeaks": {
+    "serverMiB": 95.2734375,
+    "testerMiB": 43.3359375,
+    "minimumHostAvailableMiB": 5154
+  }
+}

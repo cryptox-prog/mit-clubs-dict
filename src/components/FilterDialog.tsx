@@ -6,11 +6,12 @@ type Props = {
   selectedFilters: string[]
   onApply: (filters: string[]) => void
   onClose: () => void
+  domainOptions: string[]
 }
 
-const DOMAIN_OPTIONS = ['AI', 'Web', 'Mobile', 'Automation', 'Photography', 'Arts']
+const TYPE_OPTIONS = ['Technical', 'Cultural']
 
-const FilterDialog: React.FC<Props> = ({ open, selectedFilters, onApply, onClose }) => {
+const FilterDialog: React.FC<Props> = ({ open, selectedFilters, onApply, onClose, domainOptions }) => {
   const [selected, setSelected] = React.useState<string[]>(selectedFilters || [])
 
   React.useEffect(() => {
@@ -31,23 +32,38 @@ const FilterDialog: React.FC<Props> = ({ open, selectedFilters, onApply, onClose
   const clear = () => setSelected([])
 
   return (
-    <div className="filter-overlay" role="dialog" aria-modal="true">
+    <div className="filter-overlay" role="dialog" aria-modal="true" aria-labelledby="filter-title">
       <div className="filter-dialog">
         <div className="filter-header">
-          <h3>Filters</h3>
+          <h3 id="filter-title">Filters</h3>
           <button className="close" onClick={onClose} aria-label="Close" />
+        </div>
+
+        <div className="filter-body">
+        <div className="filter-section">
+          <strong>Type</strong>
+          <div className="options">
+            {TYPE_OPTIONS.map(type => (
+              <label key={type} className="option">
+                <input type="checkbox" checked={selected.includes(type)} onChange={() => toggle(type)} />
+                <span>{type}</span>
+              </label>
+            ))}
+          </div>
         </div>
 
         <div className="filter-section">
           <strong>Domains</strong>
           <div className="options">
-            {DOMAIN_OPTIONS.map(d => (
+            {domainOptions.map(d => (
               <label key={d} className="option">
                 <input type="checkbox" checked={selected.includes(d)} onChange={() => toggle(d)} />
                 <span>{d}</span>
               </label>
             ))}
           </div>
+        </div>
+
         </div>
 
         <div className="filter-actions">

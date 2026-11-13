@@ -1,0 +1,1252 @@
+{
+  "researched_on": "2026-11-13",
+  "sources": {
+    "official_technical": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+    "technical": "https://freshers.manipalthetalk.org/articles/clubs-manipal-technical",
+    "nontechnical": "https://freshers.manipalthetalk.org/articles/clubs-mit-non-technical",
+    "projects": "https://freshers.manipalthetalk.org/articles/clubs-manipal-technical-teams",
+    "directory": "https://freshers.manipalthetalk.org/clubs",
+    "official_projects": "https://www.manipal.edu/mit/mit-experience/mit-videos/major-student-projects.html.html"
+  },
+  "entries": [
+    {
+      "id": "7030bcf4-42c4-5641-b837-1d9468287093",
+      "slug": "acm-manipal",
+      "name": "ACM Manipal",
+      "description": "Computing community.",
+      "domains": [
+        "Computer Science"
+      ],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "acm-manipal.png",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://manipal.acm.org/ar-nb.png"
+    },
+    {
+      "id": "c272d574-9dd4-5fae-8157-f809823b84fd",
+      "slug": "acmw-manipal",
+      "name": "ACM-W Manipal",
+      "description": "Women in computing.",
+      "domains": [
+        "Computer Science"
+      ],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "acmw-manipal.png",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/ACMW_LOGO_nobg.png"
+    },
+    {
+      "id": "9e42ee45-b6fe-5ae6-b7b1-3faa25b0df19",
+      "slug": "adg-manipal",
+      "name": "Apple Developers’ Group",
+      "description": "Apple-platform development.",
+      "domains": [
+        "App Development"
+      ],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "adg-manipal.png",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/Apple%20Developre%20Group%20logo.PNG"
+    },
+    {
+      "id": "aee23b37-ef01-5e76-bf7e-8c210099d1ba",
+      "slug": "asce-manipal",
+      "name": "ASCE Manipal",
+      "description": "Civil engineering.",
+      "domains": [
+        "Civil Engineering"
+      ],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "asce-manipal.jpg",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/ASCE_Logo.png.transform/manipal-edu-transform-width-height-304px/image.jpg"
+    },
+    {
+      "id": "8163da0c-6a34-51d9-a142-e43196104da4",
+      "slug": "bmesi-manipal",
+      "name": "BMESI Manipal Chapter",
+      "description": "Biomedical engineering.",
+      "domains": [
+        "Biomedical Engineering"
+      ],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "bmesi-manipal.jpg",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/Biomedical.JPG"
+    },
+    {
+      "id": "02d073fc-c03b-521e-af99-455f5d8b09a6",
+      "slug": "enactus-manipal",
+      "name": "Enactus Manipal",
+      "description": null,
+      "domains": [],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "enactus-manipal.jpg",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/Enactus.JPG"
+    },
+    {
+      "id": "a3b6f41f-eb6f-57d2-8559-521cc66bc148",
+      "slug": "esom-manipal",
+      "name": "Economics and Finance Society of Manipal",
+      "description": "Economics and finance.",
+      "domains": [
+        "Economics & Finance"
+      ],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "esom-manipal.jpg",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/ESO.JPG"
+    },
+    {
+      "id": "deecea9d-6ff0-59b6-81e7-f7aa7c3c500a",
+      "slug": "gdsc-manipal",
+      "name": "Google Developer Student Clubs Manipal",
+      "description": null,
+      "domains": [],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "gdsc-manipal.png",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/Google-Developer-Logo.PNG"
+    },
+    {
+      "id": "a7612b92-0de0-5c60-8733-418649e4d7b8",
+      "slug": "iaeste-manipal",
+      "name": "IAESTE LC Manipal",
+      "description": "Technical exchange opportunities.",
+      "domains": [],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "iaeste-manipal.jpg",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/IAESTE.jpg"
+    },
+    {
+      "id": "9a9b3180-c3f5-572a-ad8b-7cd1e38abb45",
+      "slug": "ie-aerospace",
+      "name": "IE Aerospace",
+      "description": "Aerospace engineering.",
+      "domains": [
+        "Aerospace"
+      ],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "ie-aerospace.png",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/IEAerospace_Logo.png"
+    },
+    {
+      "id": "09876e1d-98f6-5a43-9e70-313ba0aedd38",
+      "slug": "iebt-manipal",
+      "name": "IE Biotechnology",
+      "description": "Biotechnology community.",
+      "domains": [
+        "Biotechnology"
+      ],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "iebt-manipal.jpg",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/IE%20Biotech.JPG"
+    },
+    {
+      "id": "30bb5823-744d-522c-a970-1ee47a540efb",
+      "slug": "ie-civil",
+      "name": "IE Civil",
+      "description": "Civil engineering.",
+      "domains": [
+        "Civil Engineering"
+      ],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "ie-civil.jpg",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/IE%20Civil%20Logo.jpg"
+    },
+    {
+      "id": "a16a686a-f2eb-5dd6-b0dd-d08a03484856",
+      "slug": "iecse-manipal",
+      "name": "IECSE Manipal",
+      "description": "Computing community.",
+      "domains": [
+        "Computer Science"
+      ],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "iecse-manipal.jpg",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/IE%20CSE.JPG"
+    },
+    {
+      "id": "3ada256e-8c34-58cf-801e-e9dd77d42b94",
+      "slug": "ie-enc",
+      "name": "IE E&C Manipal",
+      "description": "Electronics and communications.",
+      "domains": [
+        "Electronics"
+      ],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "ie-enc.png",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/IEE&C-BLACK.png"
+    },
+    {
+      "id": "6dec2502-a6e5-5069-ac1b-8e3ddef2ce47",
+      "slug": "ieee-embs",
+      "name": "IEEE EMBS Manipal",
+      "description": null,
+      "domains": [],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "ieee-embs.png",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/IEEE%20EMBS%20LOGO.png"
+    },
+    {
+      "id": "b0f964f0-a4dd-5ca6-b14c-02040c6fdd8f",
+      "slug": "ieee-manipal",
+      "name": "IEEE Student Branch Manipal",
+      "description": null,
+      "domains": [],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "ieee-manipal.jpg",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/IEEE%20SBM.JPG"
+    },
+    {
+      "id": "1a0ea56a-33e3-5e69-afa0-c0d95f5f1425",
+      "slug": "ie-ene",
+      "name": "IE E&E Manipal",
+      "description": "Electrical engineering.",
+      "domains": [
+        "Electrical Engineering"
+      ],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "ie-ene.jpg",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/IE%20E&E.JPG"
+    },
+    {
+      "id": "0955377c-f835-56f9-9daa-ae4f84430e97",
+      "slug": "ie-mechanical",
+      "name": "IE Mechanical",
+      "description": "Mechanical engineering.",
+      "domains": [
+        "Mechanical Engineering"
+      ],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "ie-mechanical.png",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/IE%20MECH%20%28transparent%20background%29%20LOGO.png"
+    },
+    {
+      "id": "00f90092-40b6-565d-8ce0-ac65e5dd1f32",
+      "slug": "ie-mechatronics",
+      "name": "IE Mechatronics",
+      "description": "Mechatronics community.",
+      "domains": [
+        "Mechatronics"
+      ],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "ie-mechatronics.png",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/IE-Mechatronics.png"
+    },
+    {
+      "id": "ab5c65a8-d15d-5b28-bd25-7eacff9a70c5",
+      "slug": "iiche-manipal",
+      "name": "IIChE Manipal",
+      "description": "Chemical engineering.",
+      "domains": [
+        "Chemical Engineering"
+      ],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "iiche-manipal.png",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/II%20Chem.png"
+    },
+    {
+      "id": "c4d8f89b-cc04-5e07-8aee-69625ec52464",
+      "slug": "iosd-manipal",
+      "name": "IOSD Manipal",
+      "description": "Software development.",
+      "domains": [
+        "Web Development"
+      ],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "iosd-manipal.jpg",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/IOSD.JPG"
+    },
+    {
+      "id": "0df0c0ac-19b8-5c3e-8715-7b3168bead52",
+      "slug": "isa-manipal",
+      "name": "ISA Manipal",
+      "description": "Automation and instrumentation.",
+      "domains": [
+        "Automation"
+      ],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "isa-manipal.png",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/ISA%20Main.png"
+    },
+    {
+      "id": "a19ef9f4-84a9-5192-8f6a-3fc8c8d08edf",
+      "slug": "iste-manipal",
+      "name": "ISTE Manipal",
+      "description": "Engineering learning.",
+      "domains": [],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "iste-manipal.png",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/ISTE_FINAL_OLD_LOGO.png"
+    },
+    {
+      "id": "08f029a5-e46d-5968-bd30-004d5b8edcb4",
+      "slug": "lakshya-manipal",
+      "name": "Lakshya — The Agri Club",
+      "description": "Agricultural technology.",
+      "domains": [
+        "Agriculture"
+      ],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "lakshya-manipal.jpg",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/Lakshya.JPG"
+    },
+    {
+      "id": "d5336cee-ec99-5898-add4-205f7d05c5cc",
+      "slug": "lean-in-manipal",
+      "name": "Lean In Manipal",
+      "description": null,
+      "domains": [],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "lean-in-manipal.jpg",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/Lean%20In.JPG"
+    },
+    {
+      "id": "af495e4b-c498-51a9-8c4e-b363989cf758",
+      "slug": "mist-manipal",
+      "name": "Manipal Information Security Team (MIST)",
+      "description": "Information security.",
+      "domains": [
+        "Cyber Security"
+      ],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "mist-manipal.jpg",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/MIST.JPG"
+    },
+    {
+      "id": "9c643459-5fde-58f1-838f-40d3f163026e",
+      "slug": "moss-manipal",
+      "name": "Manipal Open Source Society (MOSS)",
+      "description": "Open-source software.",
+      "domains": [
+        "Open Source"
+      ],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "moss-manipal.png",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/MossLogo.png"
+    },
+    {
+      "id": "59b234d9-74cb-5c15-ad9a-578fa92a2519",
+      "slug": "research-society",
+      "name": "Research Society MIT",
+      "description": "Student research.",
+      "domains": [
+        "Research"
+      ],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "research-society.jpg",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/RSM-logo.jpeg"
+    },
+    {
+      "id": "2f70d25f-20e0-506e-8d0b-fb100661953d",
+      "slug": "sae-manipal",
+      "name": "SAE-IM Manipal",
+      "description": "Automotive engineering.",
+      "domains": [
+        "Automotive"
+      ],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "sae-manipal.jpg",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/SAE.JPG"
+    },
+    {
+      "id": "fd485c68-9869-5471-8827-e718545dccaa",
+      "slug": "astronomy-club",
+      "name": "The Astronomy Club",
+      "description": "Astronomy community.",
+      "domains": [
+        "Astronomy"
+      ],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "astronomy-club.png",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/The%20Astronomy%20Club-Logo.png"
+    },
+    {
+      "id": "a7672d36-a3c4-5240-b4c4-0a885896403a",
+      "slug": "data-alchemists",
+      "name": "The Data Alchemists",
+      "description": null,
+      "domains": [],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://smude.edu.in/mit/mit-experience/student-welfare/technical-clubs.html",
+      "logo_file": "data-alchemists.jpg",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/TDA.jpeg"
+    },
+    {
+      "id": "4358e981-5e31-5576-9013-d3c62f4018d5",
+      "slug": "aaina-dramatics",
+      "name": "Aaina Dramatics",
+      "description": "Theatre and performance.",
+      "domains": [
+        "Theatre"
+      ],
+      "club_kind": "Cultural",
+      "table": "clubs",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-mit-non-technical",
+      "logo_file": "aaina-dramatics.jpg",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/non-technical-clubs_mit/clubs-logo/aaina-2.jpg"
+    },
+    {
+      "id": "0c3bdaa9-697f-58bf-ae56-609fe05ea37f",
+      "slug": "ada-dramatics",
+      "name": "Ada Dramatics",
+      "description": "Dramatics and street theatre.",
+      "domains": [
+        "Theatre"
+      ],
+      "club_kind": "Cultural",
+      "table": "clubs",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-mit-non-technical",
+      "logo_file": "ada-dramatics.jpg",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/non-technical-clubs_mit/clubs-logo/Ada.JPG"
+    },
+    {
+      "id": "0f67a841-311d-5c04-af4d-0a008dbb2c10",
+      "slug": "artpod",
+      "name": "Artpod",
+      "description": "Fine arts.",
+      "domains": [
+        "Fine Arts"
+      ],
+      "club_kind": "Cultural",
+      "table": "clubs",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-mit-non-technical",
+      "logo_file": "artpod.jpg",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/non-technical-clubs_mit/clubs-logo/Artpod.JPG"
+    },
+    {
+      "id": "73335cc3-501d-521a-aa53-48c50310d451",
+      "slug": "blank-101",
+      "name": "Blank 101",
+      "description": "Talks and public speaking.",
+      "domains": [
+        "Public Speaking"
+      ],
+      "club_kind": "Cultural",
+      "table": "clubs",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-mit-non-technical",
+      "logo_file": "blank-101.jpg",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/non-technical-clubs_mit/clubs-logo/Blank101.JPG"
+    },
+    {
+      "id": "e45ccba1-50f0-59e6-b560-03b16f83617c",
+      "slug": "blitzkrieg",
+      "name": "Blitzkrieg Crew",
+      "description": "Hip-hop dance.",
+      "domains": [
+        "Dance"
+      ],
+      "club_kind": "Cultural",
+      "table": "clubs",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-mit-non-technical",
+      "logo_file": "blitzkrieg.jpg",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/non-technical-clubs_mit/clubs-logo/Blitzkrieg-1.jpg"
+    },
+    {
+      "id": "cd937691-b93d-502e-97a0-1017273af07a",
+      "slug": "burning-ice",
+      "name": "Burning Ice",
+      "description": "Fashion and modelling.",
+      "domains": [
+        "Fashion"
+      ],
+      "club_kind": "Cultural",
+      "table": "clubs",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-mit-non-technical",
+      "logo_file": "burning-ice.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication"
+    },
+    {
+      "id": "15500873-2a6b-583b-ae37-01700b8c9179",
+      "slug": "chords-co",
+      "name": "Chords & Co.",
+      "description": "Music community.",
+      "domains": [
+        "Music"
+      ],
+      "club_kind": "Cultural",
+      "table": "clubs",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-mit-non-technical",
+      "logo_file": "chords-co.jpg",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/non-technical-clubs_mit/clubs-logo/Chords%20and%20co.JPG"
+    },
+    {
+      "id": "dd58d97a-fbab-50b2-9f0d-a063bd1f2f49",
+      "slug": "consulting-club",
+      "name": "The Consulting Club at Manipal",
+      "description": "Consulting and case studies.",
+      "domains": [
+        "Consulting"
+      ],
+      "club_kind": "Cultural",
+      "table": "clubs",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-mit-non-technical",
+      "logo_file": "consulting-club.jpg",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/non-technical-clubs_mit/clubs-logo/consulting.JPG"
+    },
+    {
+      "id": "ee8ca47b-8554-561b-a180-7359f74bc20f",
+      "slug": "goonj",
+      "name": "Goonj",
+      "description": "Hindi literature.",
+      "domains": [
+        "Literature"
+      ],
+      "club_kind": "Cultural",
+      "table": "clubs",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-mit-non-technical",
+      "logo_file": "goonj.jpg",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/non-technical-clubs_mit/clubs-logo/Goonj.JPG"
+    },
+    {
+      "id": "055d9325-a846-56a4-8172-5a1331fe0bbb",
+      "slug": "ldq",
+      "name": "Literary, Debate and Quiz Club (LDQ)",
+      "description": "Literature, debate and quizzes.",
+      "domains": [
+        "Literature",
+        "Public Speaking"
+      ],
+      "club_kind": "Cultural",
+      "table": "clubs",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-mit-non-technical",
+      "logo_file": "ldq.jpg",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/non-technical-clubs_mit/clubs-logo/LDQ-1.jpg"
+    },
+    {
+      "id": "387d5988-1c9d-518a-a378-2ce80434b3e7",
+      "slug": "manga-anime",
+      "name": "Manga and Anime Club",
+      "description": "Anime and manga.",
+      "domains": [
+        "Anime & Manga"
+      ],
+      "club_kind": "Cultural",
+      "table": "clubs",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-mit-non-technical",
+      "logo_file": "manga-anime.jpg",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/non-technical-clubs_mit/clubs-logo/Manga-anime.JPG"
+    },
+    {
+      "id": "cbd6a840-6a93-5e3d-8264-7adfe0b75e81",
+      "slug": "nudi",
+      "name": "Nudi",
+      "description": "Kannada culture and literature.",
+      "domains": [
+        "Literature"
+      ],
+      "club_kind": "Cultural",
+      "table": "clubs",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-mit-non-technical",
+      "logo_file": "nudi.jpg",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/non-technical-clubs_mit/clubs-logo/Nudi.JPG"
+    },
+    {
+      "id": "bd67925f-697a-544d-9991-ab2d5ce209cb",
+      "slug": "photography-club",
+      "name": "The Photography Club Manipal",
+      "description": "Photography community.",
+      "domains": [
+        "Photography"
+      ],
+      "club_kind": "Cultural",
+      "table": "clubs",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-mit-non-technical",
+      "logo_file": "photography-club.jpg",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/non-technical-clubs_mit/clubs-logo/Photography.JPG"
+    },
+    {
+      "id": "8eb0c419-4d1f-5f23-90c6-a4beaf87303e",
+      "slug": "redx",
+      "name": "Red-X Manipal",
+      "description": "Adventure and service.",
+      "domains": [
+        "Adventure",
+        "Social Service"
+      ],
+      "club_kind": "Cultural",
+      "table": "clubs",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-mit-non-technical",
+      "logo_file": "redx.jpg",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/non-technical-clubs_mit/clubs-logo/redex-1.jpg"
+    },
+    {
+      "id": "3d503b86-9bc3-5e96-a9fd-ccf1314192a7",
+      "slug": "rotaract",
+      "name": "Rotaract Club of Manipal",
+      "description": "Community service.",
+      "domains": [
+        "Social Service"
+      ],
+      "club_kind": "Cultural",
+      "table": "clubs",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-mit-non-technical",
+      "logo_file": "rotaract.jpg",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/non-technical-clubs_mit/clubs-logo/rotract-1.jpg"
+    },
+    {
+      "id": "bfbe7ec7-fc6b-5c38-8257-f3ba564dfdf0",
+      "slug": "scio",
+      "name": "SCIO Foundation",
+      "description": "Social outreach.",
+      "domains": [
+        "Social Service"
+      ],
+      "club_kind": "Cultural",
+      "table": "clubs",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-mit-non-technical",
+      "logo_file": "scio.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication"
+    },
+    {
+      "id": "f13c04a7-4daf-5586-8b58-e892bd6806d6",
+      "slug": "showstoppers",
+      "name": "The Showstoppers",
+      "description": "Dance community.",
+      "domains": [
+        "Dance"
+      ],
+      "club_kind": "Cultural",
+      "table": "clubs",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-mit-non-technical",
+      "logo_file": "showstoppers.jpg",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://smude.edu.in/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/non-technical-clubs_mit/clubs-logo/Showstoppers-1.jpg"
+    },
+    {
+      "id": "c2e1da82-b0c4-58b9-954c-865769a07e5d",
+      "slug": "think-tank",
+      "name": "The Think Tank",
+      "description": "Ideas and discussion.",
+      "domains": [],
+      "club_kind": "Cultural",
+      "table": "clubs",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-mit-non-technical",
+      "logo_file": "think-tank.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication"
+    },
+    {
+      "id": "dca619dd-df43-54e7-9460-db79e35a6d2d",
+      "slug": "asme-manipal",
+      "name": "ASME Manipal",
+      "description": "Mechanical engineering.",
+      "domains": [
+        "Mechanical Engineering"
+      ],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-manipal-technical",
+      "logo_file": "asme-manipal.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://technical-clubs-manipal.github.io/images/ASME.png"
+    },
+    {
+      "id": "336f403a-59d3-5ffe-8671-d0b019395dba",
+      "slug": "gaming-club",
+      "name": "MIT Gaming Club",
+      "description": "Gaming community.",
+      "domains": [
+        "Game Development"
+      ],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-manipal-technical",
+      "logo_file": "gaming-club.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication"
+    },
+    {
+      "id": "43441287-0c3f-5b29-95ab-1993ae377960",
+      "slug": "student-entrepreneurship",
+      "name": "Student Entrepreneurship Cell",
+      "description": "Entrepreneurship activities.",
+      "domains": [
+        "Entrepreneurship"
+      ],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-manipal-technical",
+      "logo_file": "student-entrepreneurship.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://technical-clubs-manipal.github.io/images/MUTBI.png"
+    },
+    {
+      "id": "adc3f4e3-1823-53a5-ab9f-085f8bdce16d",
+      "slug": "teach-code",
+      "name": "Teach Code for Good",
+      "description": "Coding outreach.",
+      "domains": [
+        "Computer Science",
+        "Social Service"
+      ],
+      "club_kind": "Technical",
+      "table": "clubs",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-manipal-technical",
+      "logo_file": "teach-code.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://technical-clubs-manipal.github.io/images/tcfglogo.png"
+    },
+    {
+      "id": "8faf7d01-6f91-575e-abe9-6071e29c4f34",
+      "slug": "editorial-board",
+      "name": "The Editorial Board",
+      "description": "College yearbook.",
+      "domains": [
+        "Media"
+      ],
+      "club_kind": "Cultural",
+      "table": "clubs",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-mit-non-technical",
+      "logo_file": "editorial-board.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication"
+    },
+    {
+      "id": "0a8e5a0e-d627-5af7-80d5-275c994b6850",
+      "slug": "mit-post",
+      "name": "The MIT Post",
+      "description": "Campus media.",
+      "domains": [
+        "Media"
+      ],
+      "club_kind": "Cultural",
+      "table": "clubs",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-mit-non-technical",
+      "logo_file": "mit-post.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication"
+    },
+    {
+      "id": "4f60e112-d46b-5a2f-b860-8371f1d52bd8",
+      "slug": "mttn",
+      "name": "Manipal the Talk Network (MTTN)",
+      "description": "Student media.",
+      "domains": [
+        "Media"
+      ],
+      "club_kind": "Cultural",
+      "table": "clubs",
+      "source_url": "https://freshers.manipalthetalk.org/clubs",
+      "logo_file": "mttn.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication"
+    },
+    {
+      "id": "1d4e5e69-d7be-5e23-bddc-30654ce35dd2",
+      "slug": "echo",
+      "name": "E.C.H.O Manipal",
+      "description": "Environmental conservation.",
+      "domains": [
+        "Environment"
+      ],
+      "club_kind": "Cultural",
+      "table": "clubs",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-mit-non-technical",
+      "logo_file": "echo.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication"
+    },
+    {
+      "id": "3c53bb94-8921-5130-ba95-fe12dbc70908",
+      "slug": "aiesec",
+      "name": "AIESEC in MAHE",
+      "description": "International student opportunities.",
+      "domains": [],
+      "club_kind": "Cultural",
+      "table": "clubs",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-mit-non-technical",
+      "logo_file": "aiesec.png",
+      "scope": "MAHE-wide",
+      "source_status": "archive-based student publication"
+    },
+    {
+      "id": "8fcf058c-9eeb-51c2-8d59-b0255f0ff2e9",
+      "slug": "vso",
+      "name": "Volunteer Services Organisation — MAHE",
+      "description": "Volunteering.",
+      "domains": [
+        "Social Service"
+      ],
+      "club_kind": "Cultural",
+      "table": "clubs",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-mit-non-technical",
+      "logo_file": "vso.png",
+      "scope": "MAHE-wide",
+      "source_status": "archive-based student publication"
+    },
+    {
+      "id": "af14ef96-e729-5b3b-ad07-64e781b8b2a2",
+      "slug": "aeromit",
+      "name": "AeroMIT",
+      "description": "Model aircraft engineering.",
+      "domains": [
+        "Aerospace"
+      ],
+      "club_kind": null,
+      "table": "student_projects",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-manipal-technical-teams",
+      "logo_file": "aeromit.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://technical-clubs-manipal.github.io/images/AeroMIT.png"
+    },
+    {
+      "id": "691d8e0b-a36f-5349-af62-7b7910b9aee2",
+      "slug": "cryptonite",
+      "name": "Cryptonite",
+      "description": "Cybersecurity research and competitions.",
+      "domains": [
+        "Cyber Security"
+      ],
+      "club_kind": null,
+      "table": "student_projects",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-manipal-technical-teams",
+      "logo_file": "cryptonite.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://cryptonitemit.in/assets/logos/favicon.png"
+    },
+    {
+      "id": "d1f43f3e-3c7a-5391-8270-45be58c19123",
+      "slug": "dronaid",
+      "name": "Dronaid",
+      "description": "Drones for healthcare.",
+      "domains": [
+        "Aerospace",
+        "AI"
+      ],
+      "club_kind": null,
+      "table": "student_projects",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-manipal-technical-teams",
+      "logo_file": "dronaid.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://technical-clubs-manipal.github.io/images/Dronaid.png"
+    },
+    {
+      "id": "46988dcb-dfd9-545e-b634-a64e942bf4f8",
+      "slug": "formula-manipal",
+      "name": "Formula Manipal",
+      "description": "Formula-style racing cars.",
+      "domains": [
+        "Automotive"
+      ],
+      "club_kind": null,
+      "table": "student_projects",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-manipal-technical-teams",
+      "logo_file": "formula-manipal.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://formulamanipal.com/assets/tab_photo-BQ6LQ462.png"
+    },
+    {
+      "id": "3c13ce67-8e48-5bf1-8cf4-eb4bf61541f5",
+      "slug": "loopmit",
+      "name": "LoopMIT",
+      "description": "Hyperloop vehicle development.",
+      "domains": [
+        "Mechanical Engineering"
+      ],
+      "club_kind": null,
+      "table": "student_projects",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-manipal-technical-teams",
+      "logo_file": "loopmit.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://loopmit.in/pictures/logo/logo.png"
+    },
+    {
+      "id": "1765a235-d859-530d-9e6e-6679905acfc9",
+      "slug": "biomachines",
+      "name": "Manipal BioMachines",
+      "description": "Synthetic biology.",
+      "domains": [
+        "Biotechnology"
+      ],
+      "club_kind": null,
+      "table": "student_projects",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-manipal-technical-teams",
+      "logo_file": "biomachines.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://www.manipalbiomachinesmahe.com/images/ICON_min.png"
+    },
+    {
+      "id": "bc92b5b0-2e06-51cb-989c-b053732199c0",
+      "slug": "mars-rover",
+      "name": "Mars Rover Manipal",
+      "description": "Planetary rover development.",
+      "domains": [
+        "Robotics"
+      ],
+      "club_kind": null,
+      "table": "student_projects",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-manipal-technical-teams",
+      "logo_file": "mars-rover.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://www.marsrovermanipal.org/logo.png"
+    },
+    {
+      "id": "15ec5482-6fa6-536f-bdef-79cf1f65acf6",
+      "slug": "motomanipal",
+      "name": "MotoManipal",
+      "description": "Electric motorcycles.",
+      "domains": [
+        "Automotive"
+      ],
+      "club_kind": null,
+      "table": "student_projects",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-manipal-technical-teams",
+      "logo_file": "motomanipal.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://technical-clubs-manipal.github.io/images/motomanipal_png.png"
+    },
+    {
+      "id": "1572807c-736c-5c97-8761-1b029d0d336a",
+      "slug": "parikshit",
+      "name": "Parikshit",
+      "description": "Student satellite development.",
+      "domains": [
+        "Aerospace"
+      ],
+      "club_kind": null,
+      "table": "student_projects",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-manipal-technical-teams",
+      "logo_file": "parikshit.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://technical-clubs-manipal.github.io/images/Parikshit.png"
+    },
+    {
+      "id": "47968315-8b6b-5532-81ac-f8a9b54a9000",
+      "slug": "project-manas",
+      "name": "Project Manas",
+      "description": "Autonomous vehicles.",
+      "domains": [
+        "AI",
+        "Robotics"
+      ],
+      "club_kind": null,
+      "table": "student_projects",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-manipal-technical-teams",
+      "logo_file": "project-manas.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://projectmanas.in/assets/manas-with-border.png"
+    },
+    {
+      "id": "57425bad-efca-5acd-b6d7-6da62d0777a7",
+      "slug": "robomanipal",
+      "name": "RoboManipal",
+      "description": "Robotics engineering.",
+      "domains": [
+        "Robotics"
+      ],
+      "club_kind": null,
+      "table": "student_projects",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-manipal-technical-teams",
+      "logo_file": "robomanipal.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://technical-clubs-manipal.github.io/images/RM.png"
+    },
+    {
+      "id": "711bf9b0-f77d-521b-82e4-5f9938889cb8",
+      "slug": "robotics-circuits",
+      "name": "Robotics and Circuits",
+      "description": "Robotics and embedded systems.",
+      "domains": [
+        "Robotics",
+        "Electronics"
+      ],
+      "club_kind": null,
+      "table": "student_projects",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-manipal-technical-teams",
+      "logo_file": "robotics-circuits.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://technical-clubs-manipal.github.io/images/RnC.png"
+    },
+    {
+      "id": "4b8e9e43-cdb1-59c7-b5a4-59daa0bc885c",
+      "slug": "rugved",
+      "name": "R.U.G.V.E.D",
+      "description": "Unmanned robotic systems.",
+      "domains": [
+        "Robotics"
+      ],
+      "club_kind": null,
+      "table": "student_projects",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-manipal-technical-teams",
+      "logo_file": "rugved.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://technical-clubs-manipal.github.io/images/Rugved.png"
+    },
+    {
+      "id": "608e1663-c4bc-5aa6-bee5-e44e9102a37e",
+      "slug": "solarmobil",
+      "name": "SolarMobil",
+      "description": "Solar-powered vehicles.",
+      "domains": [
+        "Automotive",
+        "Renewable Energy"
+      ],
+      "club_kind": null,
+      "table": "student_projects",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-manipal-technical-teams",
+      "logo_file": "solarmobil.jpg",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://technical-clubs-manipal.github.io/images/SM.jpg"
+    },
+    {
+      "id": "ee2d1532-fd87-5f84-86c5-eb56073d36df",
+      "slug": "swarm",
+      "name": "S.W.A.R.M Robotics",
+      "description": "Cooperative autonomous robots.",
+      "domains": [
+        "Robotics"
+      ],
+      "club_kind": null,
+      "table": "student_projects",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-manipal-technical-teams",
+      "logo_file": "swarm.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://swarmrobotics.in/assets/logo-cfkQUb25.png"
+    },
+    {
+      "id": "823619f2-f200-527f-8093-912de11f82d3",
+      "slug": "auv-manipal",
+      "name": "Team AUV Manipal",
+      "description": "Underwater robotics.",
+      "domains": [
+        "Robotics"
+      ],
+      "club_kind": null,
+      "table": "student_projects",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-manipal-technical-teams",
+      "logo_file": "auv-manipal.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication"
+    },
+    {
+      "id": "fa979742-e37f-56f7-ad32-871b82c60e48",
+      "slug": "combat-robotics",
+      "name": "Team Combat Robotics",
+      "description": "Combat robot engineering.",
+      "domains": [
+        "Robotics"
+      ],
+      "club_kind": null,
+      "table": "student_projects",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-manipal-technical-teams",
+      "logo_file": "combat-robotics.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://teamcombatrobotics.in/tcr%20logo.png"
+    },
+    {
+      "id": "a45f12bf-2b36-5856-8f33-236d201469d5",
+      "slug": "manipal-racing",
+      "name": "Team Manipal Racing",
+      "description": "Off-road vehicle engineering.",
+      "domains": [
+        "Automotive"
+      ],
+      "club_kind": null,
+      "table": "student_projects",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-manipal-technical-teams",
+      "logo_file": "manipal-racing.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://technical-clubs-manipal.github.io/images/TMR.png"
+    },
+    {
+      "id": "01f5c38e-d496-5468-a5f1-69e4610de7d4",
+      "slug": "thrustmit",
+      "name": "thrustMIT",
+      "description": "Student rocketry.",
+      "domains": [
+        "Aerospace"
+      ],
+      "club_kind": null,
+      "table": "student_projects",
+      "source_url": "https://freshers.manipalthetalk.org/articles/clubs-manipal-technical-teams",
+      "logo_file": "thrustmit.png",
+      "scope": "Manipal campus",
+      "source_status": "archive-based student publication",
+      "logo_source_url": "https://technical-clubs-manipal.github.io/images/thrust.png"
+    },
+    {
+      "id": "dd90febe-5d7d-583e-b42e-505ada0a1601",
+      "slug": "team-synergy",
+      "name": "Team Synergy",
+      "description": "Product prototyping.",
+      "domains": [
+        "Product Development"
+      ],
+      "club_kind": null,
+      "table": "student_projects",
+      "source_url": "https://www.manipal.edu/mit/mit-experience/mit-videos/major-student-projects.html.html",
+      "logo_file": "team-synergy.png",
+      "scope": "Manipal campus",
+      "source_status": "institutional listing"
+    }
+  ]
+}

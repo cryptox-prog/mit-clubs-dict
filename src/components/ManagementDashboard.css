@@ -1,0 +1,60 @@
+.dashboard-overlay { position: fixed; inset: 0; z-index: 90; display: grid; place-items: center; padding: 24px; background: rgb(0 0 0 / 65%); }
+.management-dashboard { width: min(1180px, 100%); height: min(850px, calc(100dvh - 48px)); display: flex; flex-direction: column; box-sizing: border-box; background: var(--bg-main); color: var(--text-primary); border: 2px solid var(--border-strong); box-shadow: 0 15px 55px rgb(0 0 0 / 30%); }
+.dashboard-header { display: flex; gap: 16px; justify-content: space-between; align-items: center; padding: 20px 24px; border-bottom: 2px dashed var(--border-subtle); flex-shrink: 0; }
+.dashboard-header h1 { margin: 5px 0 0; font-size: 1.45rem; }
+.dashboard-eyebrow { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent-blue); font-weight: 700; }
+.dashboard-body { display: grid; grid-template-columns: 260px minmax(0, 1fr); min-height: 0; flex: 1; }
+.dashboard-sidebar { padding: 20px 14px; border-right: 2px dashed var(--border-subtle); overflow-y: auto; }
+.dashboard-sidebar > label { display: grid; gap: 9px; margin-bottom: 15px; font-size: 0.85rem; color: var(--text-secondary); }
+.dashboard-sidebar nav { display: grid; gap: 6px; }
+.dashboard-sidebar nav button { display: grid; gap: 5px; width: 100%; background: transparent; color: var(--text-primary); border: 1px solid transparent; padding: 12px; font: inherit; text-align: left; cursor: pointer; }
+.dashboard-sidebar nav button:hover { background: var(--bg-surface); }
+.dashboard-sidebar nav button.selected { background: var(--bg-elevated); border-color: var(--accent-blue); }
+.dashboard-sidebar nav small { color: var(--text-muted); font-size: 0.75rem; }
+.dashboard-editor { padding: 24px; overflow-y: auto; }
+.editor-heading { display: flex; justify-content: space-between; align-items: center; gap: 14px; margin-bottom: 24px; }
+.editor-heading h2 { font-size: 1.3rem; margin: 6px 0 0; }
+.editor-icon { width: 64px; height: 64px; object-fit: contain; }
+.listing-form > fieldset { border: 0; padding: 0; margin: 0; display: grid; gap: 17px; min-width: 0; }
+.listing-form label, .assignment-form label { display: grid; gap: 7px; font-weight: 700; }
+.management-dashboard input:not([type=checkbox]), .management-dashboard textarea, .management-dashboard select { box-sizing: border-box; width: 100%; min-width: 0; font: inherit; padding: 10px; border: 2px solid var(--border-subtle); background: var(--bg-surface); color: var(--text-primary); }
+.management-dashboard textarea { resize: vertical; }
+.management-dashboard input:focus-visible, .management-dashboard select:focus-visible, .management-dashboard textarea:focus-visible, .dashboard-sidebar button:focus-visible { outline: 2px solid var(--accent-blue); outline-offset: 2px; }
+.editor-two-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.editor-hint { color: var(--text-muted); font-size: 0.85rem; line-height: 1.4; margin: -7px 0 0; }
+.editor-options { border: 1px solid var(--border-subtle); padding: 12px; min-width: 0; }
+.editor-options legend { color: var(--text-secondary); font-weight: 700; padding: 0 6px; }
+.editor-options > div { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 9px; }
+.editor-options label { display: flex; align-items: center; gap: 7px; font-weight: 400; font-size: 0.85rem; overflow-wrap: anywhere; }
+.editor-options input { accent-color: var(--accent-blue); width: 17px; height: 17px; flex-shrink: 0; }
+.listing-form .btn { justify-self: start; }
+.management-error { margin: 14px 0; padding: 12px; border-left: 3px solid var(--accent-red); color: var(--accent-red); line-height: 1.4; }
+.management-dashboard > .management-error { margin: 12px 20px; }
+.management-error p { margin: 0 0 10px; }
+.dashboard-notice { margin: 0; padding: 12px 24px; background: var(--bg-elevated); color: var(--accent-cyan); }
+.dashboard-empty { padding: 24px; color: var(--text-secondary); }
+.manager-assignments { margin-top: 30px; padding-top: 24px; border-top: 2px dashed var(--border-subtle); }
+.manager-assignments h3 { margin: 0; }
+.manager-assignments > p { color: var(--text-muted); line-height: 1.4; }
+.manager-assignments ul { list-style: none; padding: 0; }
+.manager-assignments li { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--border-subtle); }
+.manager-assignments li span { min-width: 0; overflow-wrap: anywhere; }
+.manager-assignments li small { display: block; margin-top: 4px; color: var(--text-muted); }
+.assignment-form { display: flex; gap: 10px; align-items: end; }
+.assignment-form label { flex: 1; min-width: 0; }
+.management-dashboard button:disabled, .management-dashboard fieldset:disabled { opacity: 0.65; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+@media (max-width: 760px) {
+    .dashboard-overlay { padding: 10px; }
+    .management-dashboard { height: calc(100dvh - 20px); }
+    .dashboard-header { padding: 16px; }
+    .dashboard-header h1 { font-size: 1.15rem; }
+    .dashboard-header .btn { padding: 8px; font-size: 0.8rem; }
+    .dashboard-body { display: block; overflow-y: auto; }
+    .dashboard-sidebar { padding: 14px; overflow: visible; border-right: 0; border-bottom: 2px dashed var(--border-subtle); }
+    .dashboard-sidebar nav { max-height: 150px; overflow-y: auto; }
+    .dashboard-editor { padding: 16px; overflow: visible; }
+    .editor-options > div { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .editor-two-columns { grid-template-columns: 1fr; }
+    .assignment-form { flex-direction: column; align-items: stretch; }
+}

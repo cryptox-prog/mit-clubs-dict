@@ -65,3 +65,19 @@
 .filter-container button:active {
     background-color: var(--border-subtle);
 }
+
+.directory-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0 2rem;
+}
+.directory-message {
+    padding: 1.5rem;
+    border: 2px dashed var(--border-subtle);
+    color: var(--text-secondary);
+    background: var(--bg-surface);
+}
+
+/* Leave room to scroll the final card clear of the floating account button. */
+.directory-list { padding-bottom: 80px; }

@@ -1,0 +1,46 @@
+{
+  "runId": "20261113065257",
+  "stages": [
+    {
+      "targetUsers": 1000,
+      "rps": 18,
+      "workers": 48,
+      "rampSeconds": 15,
+      "maxSeconds": 450,
+      "startedAt": "2026-11-13T06:53:00.052Z",
+      "startedUsers": 1000,
+      "completedUsers": 993,
+      "abortedUsers": 7,
+      "activeUsers": 0,
+      "peakActiveUsers": 48,
+      "startedRequests": 5382,
+      "statuses": {
+        "200": 4380,
+        "401": 1000,
+        "503": 2
+      },
+      "errors": 2,
+      "transportErrors": 0,
+      "consecutiveErrors": 2,
+      "bytes": 403269309,
+      "returningWarmUsers": 307,
+      "coldUsers": 693,
+      "directoryCacheHits": 495,
+      "iconCacheHits": 1790,
+      "modeledAnalyticsEvents": 3544,
+      "durationSeconds": 313.16,
+      "finishedAt": "2026-11-13T06:58:13.217Z",
+      "p50Ms": 293.93,
+      "p95Ms": 657.01,
+      "p99Ms": 1057.78
+    }
+  ],
+  "sampledAnalyticsEvents": 27,
+  "analyticsAccepted": 27,
+  "analyticsFailed": 0,
+  "stopReason": "Supabase upstream budget reached",
+  "totalRequests": 5382,
+  "totalBytes": 403269309,
+  "maxActiveRequests": 12,
+  "rssBytes": 93433856
+}

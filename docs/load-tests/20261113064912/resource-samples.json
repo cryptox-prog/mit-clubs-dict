@@ -1,0 +1,2522 @@
+[
+  {
+    "time": "2026-11-13T06:49:15.630Z",
+    "availableMiB": 5488,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "67874816",
+      "MemoryPeak": "78106624",
+      "CPUUsageNSec": "1177251000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "12095488",
+      "MemoryPeak": "12095488",
+      "CPUUsageNSec": "63321000",
+      "TasksCurrent": "7",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 123764736,
+    "eventLoopP99Ms": 85.721087,
+    "upstreamRequests": 0,
+    "upstreamBytes": 0
+  },
+  {
+    "time": "2026-11-13T06:49:17.733Z",
+    "availableMiB": 5541,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "69447680",
+      "MemoryPeak": "78106624",
+      "CPUUsageNSec": "1370440000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "20799488",
+      "MemoryPeak": "20799488",
+      "CPUUsageNSec": "210311000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 127565824,
+    "eventLoopP99Ms": 41.517055,
+    "upstreamRequests": 2,
+    "upstreamBytes": 0
+  },
+  {
+    "time": "2026-11-13T06:49:19.830Z",
+    "availableMiB": 5510,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "75055104",
+      "MemoryPeak": "78106624",
+      "CPUUsageNSec": "1629972000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "22900736",
+      "MemoryPeak": "23072768",
+      "CPUUsageNSec": "285044000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 131661824,
+    "eventLoopP99Ms": 22.446079,
+    "upstreamRequests": 18,
+    "upstreamBytes": 312304
+  },
+  {
+    "time": "2026-11-13T06:49:21.932Z",
+    "availableMiB": 5494,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "75059200",
+      "MemoryPeak": "78106624",
+      "CPUUsageNSec": "1961509000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "24084480",
+      "MemoryPeak": "24420352",
+      "CPUUsageNSec": "365809000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 133627904,
+    "eventLoopP99Ms": 22.642687,
+    "upstreamRequests": 39,
+    "upstreamBytes": 825098
+  },
+  {
+    "time": "2026-11-13T06:49:23.953Z",
+    "availableMiB": 5514,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "76374016",
+      "MemoryPeak": "78106624",
+      "CPUUsageNSec": "2195459000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "25251840",
+      "MemoryPeak": "25788416",
+      "CPUUsageNSec": "444465000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 134414336,
+    "eventLoopP99Ms": 23.592959,
+    "upstreamRequests": 61,
+    "upstreamBytes": 1370317
+  },
+  {
+    "time": "2026-11-13T06:49:25.985Z",
+    "availableMiB": 5516,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "68558848",
+      "MemoryPeak": "78106624",
+      "CPUUsageNSec": "2381852000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "25174016",
+      "MemoryPeak": "25788416",
+      "CPUUsageNSec": "500125000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 127590400,
+    "eventLoopP99Ms": 22.200319,
+    "upstreamRequests": 83,
+    "upstreamBytes": 1899735
+  },
+  {
+    "time": "2026-11-13T06:49:28.016Z",
+    "availableMiB": 5507,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "71421952",
+      "MemoryPeak": "78106624",
+      "CPUUsageNSec": "2748084000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "26345472",
+      "MemoryPeak": "26718208",
+      "CPUUsageNSec": "580499000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 128901120,
+    "eventLoopP99Ms": 20.840447,
+    "upstreamRequests": 109,
+    "upstreamBytes": 2304137
+  },
+  {
+    "time": "2026-11-13T06:49:30.136Z",
+    "availableMiB": 5485,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "79167488",
+      "MemoryPeak": "79466496",
+      "CPUUsageNSec": "3009516000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "29433856",
+      "MemoryPeak": "29687808",
+      "CPUUsageNSec": "679745000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 137703424,
+    "eventLoopP99Ms": 22.249471,
+    "upstreamRequests": 138,
+    "upstreamBytes": 4073621
+  },
+  {
+    "time": "2026-11-13T06:49:32.171Z",
+    "availableMiB": 5526,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "83582976",
+      "MemoryPeak": "83722240",
+      "CPUUsageNSec": "3386884000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "28688384",
+      "MemoryPeak": "29982720",
+      "CPUUsageNSec": "759842000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 141766656,
+    "eventLoopP99Ms": 99.876863,
+    "upstreamRequests": 169,
+    "upstreamBytes": 5990320
+  },
+  {
+    "time": "2026-11-13T06:49:34.195Z",
+    "availableMiB": 5468,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "84209664",
+      "MemoryPeak": "84533248",
+      "CPUUsageNSec": "3683807000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "29265920",
+      "MemoryPeak": "29982720",
+      "CPUUsageNSec": "821301000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 142684160,
+    "eventLoopP99Ms": 101.318655,
+    "upstreamRequests": 201,
+    "upstreamBytes": 7722293
+  },
+  {
+    "time": "2026-11-13T06:49:36.222Z",
+    "availableMiB": 5475,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "84156416",
+      "MemoryPeak": "85102592",
+      "CPUUsageNSec": "3955625000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "29704192",
+      "MemoryPeak": "30048256",
+      "CPUUsageNSec": "890881000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 142946304,
+    "eventLoopP99Ms": 20.971519,
+    "upstreamRequests": 228,
+    "upstreamBytes": 8676542
+  },
+  {
+    "time": "2026-11-13T06:49:38.327Z",
+    "availableMiB": 5473,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "78151680",
+      "MemoryPeak": "85102592",
+      "CPUUsageNSec": "4224329000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "28889088",
+      "MemoryPeak": "30134272",
+      "CPUUsageNSec": "965086000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 138194944,
+    "eventLoopP99Ms": 23.511039,
+    "upstreamRequests": 252,
+    "upstreamBytes": 10171166
+  },
+  {
+    "time": "2026-11-13T06:49:40.438Z",
+    "availableMiB": 5465,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "79163392",
+      "MemoryPeak": "85102592",
+      "CPUUsageNSec": "4610949000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "29573120",
+      "MemoryPeak": "30134272",
+      "CPUUsageNSec": "1032352000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 138194944,
+    "eventLoopP99Ms": 99.876863,
+    "upstreamRequests": 275,
+    "upstreamBytes": 11701106
+  },
+  {
+    "time": "2026-11-13T06:49:42.473Z",
+    "availableMiB": 5473,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "79577088",
+      "MemoryPeak": "85102592",
+      "CPUUsageNSec": "4936256000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "28516352",
+      "MemoryPeak": "30134272",
+      "CPUUsageNSec": "1095039000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 138457088,
+    "eventLoopP99Ms": 26.427391,
+    "upstreamRequests": 320,
+    "upstreamBytes": 13860990
+  },
+  {
+    "time": "2026-11-13T06:49:44.632Z",
+    "availableMiB": 5456,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "79659008",
+      "MemoryPeak": "85102592",
+      "CPUUsageNSec": "5277823000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "30089216",
+      "MemoryPeak": "30744576",
+      "CPUUsageNSec": "1167901000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 138719232,
+    "eventLoopP99Ms": 25.673727,
+    "upstreamRequests": 350,
+    "upstreamBytes": 15645199
+  },
+  {
+    "time": "2026-11-13T06:49:46.737Z",
+    "availableMiB": 5181,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "81063936",
+      "MemoryPeak": "85102592",
+      "CPUUsageNSec": "5551135000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "30138368",
+      "MemoryPeak": "30744576",
+      "CPUUsageNSec": "1220253000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 139767808,
+    "eventLoopP99Ms": 26.034175,
+    "upstreamRequests": 377,
+    "upstreamBytes": 16829788
+  },
+  {
+    "time": "2026-11-13T06:49:48.842Z",
+    "availableMiB": 5154,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "80273408",
+      "MemoryPeak": "85102592",
+      "CPUUsageNSec": "5877509000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "30961664",
+      "MemoryPeak": "31424512",
+      "CPUUsageNSec": "1283576000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 139767808,
+    "eventLoopP99Ms": 28.016639,
+    "upstreamRequests": 407,
+    "upstreamBytes": 19024513
+  },
+  {
+    "time": "2026-11-13T06:49:50.929Z",
+    "availableMiB": 5895,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "80093184",
+      "MemoryPeak": "85102592",
+      "CPUUsageNSec": "6168722000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "30277632",
+      "MemoryPeak": "31424512",
+      "CPUUsageNSec": "1332272000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 139300864,
+    "eventLoopP99Ms": 21.250047,
+    "upstreamRequests": 439,
+    "upstreamBytes": 20495356
+  },
+  {
+    "time": "2026-11-13T06:49:52.965Z",
+    "availableMiB": 5859,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "84750336",
+      "MemoryPeak": "85442560",
+      "CPUUsageNSec": "6573379000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "30519296",
+      "MemoryPeak": "33370112",
+      "CPUUsageNSec": "1442186000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 144412672,
+    "eventLoopP99Ms": 101.187583,
+    "upstreamRequests": 466,
+    "upstreamBytes": 23755036
+  },
+  {
+    "time": "2026-11-13T06:49:55.129Z",
+    "availableMiB": 5857,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "89534464",
+      "MemoryPeak": "90505216",
+      "CPUUsageNSec": "6881432000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "31895552",
+      "MemoryPeak": "33370112",
+      "CPUUsageNSec": "1507148000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 144412672,
+    "eventLoopP99Ms": 20.824063,
+    "upstreamRequests": 497,
+    "upstreamBytes": 25343816
+  },
+  {
+    "time": "2026-11-13T06:49:57.235Z",
+    "availableMiB": 5808,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "91705344",
+      "MemoryPeak": "91893760",
+      "CPUUsageNSec": "7469151000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "32960512",
+      "MemoryPeak": "33370112",
+      "CPUUsageNSec": "1568924000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 150048768,
+    "eventLoopP99Ms": 100.139007,
+    "upstreamRequests": 527,
+    "upstreamBytes": 29376338
+  },
+  {
+    "time": "2026-11-13T06:49:59.329Z",
+    "availableMiB": 5787,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "91541504",
+      "MemoryPeak": "93040640",
+      "CPUUsageNSec": "7787450000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "31608832",
+      "MemoryPeak": "33370112",
+      "CPUUsageNSec": "1620247000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 150704128,
+    "eventLoopP99Ms": 100.007935,
+    "upstreamRequests": 559,
+    "upstreamBytes": 31494659
+  },
+  {
+    "time": "2026-11-13T06:50:01.362Z",
+    "availableMiB": 5699,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "91410432",
+      "MemoryPeak": "93040640",
+      "CPUUsageNSec": "8166504000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "31571968",
+      "MemoryPeak": "34119680",
+      "CPUUsageNSec": "1688723000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 150835200,
+    "eventLoopP99Ms": 99.090431,
+    "upstreamRequests": 593,
+    "upstreamBytes": 34920086
+  },
+  {
+    "time": "2026-11-13T06:50:03.435Z",
+    "availableMiB": 5727,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "91480064",
+      "MemoryPeak": "93040640",
+      "CPUUsageNSec": "8340595000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "31473664",
+      "MemoryPeak": "34119680",
+      "CPUUsageNSec": "1751144000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 150835200,
+    "eventLoopP99Ms": 22.593535,
+    "upstreamRequests": 615,
+    "upstreamBytes": 35579000
+  },
+  {
+    "time": "2026-11-13T06:50:05.528Z",
+    "availableMiB": 5749,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "91729920",
+      "MemoryPeak": "93040640",
+      "CPUUsageNSec": "8616048000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "31469568",
+      "MemoryPeak": "34119680",
+      "CPUUsageNSec": "1794688000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 150835200,
+    "eventLoopP99Ms": 21.610495,
+    "upstreamRequests": 644,
+    "upstreamBytes": 37205768
+  },
+  {
+    "time": "2026-11-13T06:50:07.628Z",
+    "availableMiB": 5774,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "91860992",
+      "MemoryPeak": "93040640",
+      "CPUUsageNSec": "9001699000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "33320960",
+      "MemoryPeak": "34119680",
+      "CPUUsageNSec": "1886762000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 150835200,
+    "eventLoopP99Ms": 25.526271,
+    "upstreamRequests": 679,
+    "upstreamBytes": 39353505
+  },
+  {
+    "time": "2026-11-13T06:50:09.656Z",
+    "availableMiB": 5773,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "92422144",
+      "MemoryPeak": "93245440",
+      "CPUUsageNSec": "9309149000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "35225600",
+      "MemoryPeak": "35377152",
+      "CPUUsageNSec": "1974830000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 151359488,
+    "eventLoopP99Ms": 26.411007,
+    "upstreamRequests": 726,
+    "upstreamBytes": 43216508
+  },
+  {
+    "time": "2026-11-13T06:50:11.728Z",
+    "availableMiB": 5762,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "92225536",
+      "MemoryPeak": "93245440",
+      "CPUUsageNSec": "9411212000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "33837056",
+      "MemoryPeak": "35377152",
+      "CPUUsageNSec": "1997001000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 151359488,
+    "eventLoopP99Ms": 20.529151,
+    "upstreamRequests": 739,
+    "upstreamBytes": 44786480
+  },
+  {
+    "time": "2026-11-13T06:50:13.758Z",
+    "availableMiB": 5757,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "92073984",
+      "MemoryPeak": "93679616",
+      "CPUUsageNSec": "9546134000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "36335616",
+      "MemoryPeak": "36339712",
+      "CPUUsageNSec": "2013177000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 151359488,
+    "eventLoopP99Ms": 20.316159,
+    "upstreamRequests": 743,
+    "upstreamBytes": 45926654
+  },
+  {
+    "time": "2026-11-13T06:50:15.787Z",
+    "availableMiB": 5745,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "92119040",
+      "MemoryPeak": "93679616",
+      "CPUUsageNSec": "9552320000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "36343808",
+      "MemoryPeak": "36597760",
+      "CPUUsageNSec": "2054424000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 151359488,
+    "eventLoopP99Ms": 20.463615,
+    "upstreamRequests": 743,
+    "upstreamBytes": 45926654
+  },
+  {
+    "time": "2026-11-13T06:50:17.833Z",
+    "availableMiB": 5774,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "92606464",
+      "MemoryPeak": "93679616",
+      "CPUUsageNSec": "9568242000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "36626432",
+      "MemoryPeak": "36634624",
+      "CPUUsageNSec": "2108064000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 151490560,
+    "eventLoopP99Ms": 20.365311,
+    "upstreamRequests": 743,
+    "upstreamBytes": 45926654
+  },
+  {
+    "time": "2026-11-13T06:50:19.869Z",
+    "availableMiB": 5778,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "92119040",
+      "MemoryPeak": "93679616",
+      "CPUUsageNSec": "9574483000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "35487744",
+      "MemoryPeak": "36634624",
+      "CPUUsageNSec": "2111265000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 151490560,
+    "eventLoopP99Ms": 20.299775,
+    "upstreamRequests": 743,
+    "upstreamBytes": 45926654
+  },
+  {
+    "time": "2026-11-13T06:50:21.928Z",
+    "availableMiB": 5776,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "94425088",
+      "MemoryPeak": "95088640",
+      "CPUUsageNSec": "9772819000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "37306368",
+      "MemoryPeak": "37306368",
+      "CPUUsageNSec": "2191805000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 153305088,
+    "eventLoopP99Ms": 22.036479,
+    "upstreamRequests": 754,
+    "upstreamBytes": 46028745
+  },
+  {
+    "time": "2026-11-13T06:50:24.042Z",
+    "availableMiB": 5774,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "94167040",
+      "MemoryPeak": "95178752",
+      "CPUUsageNSec": "10128144000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "35536896",
+      "MemoryPeak": "37543936",
+      "CPUUsageNSec": "2281929000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 153305088,
+    "eventLoopP99Ms": 100.073471,
+    "upstreamRequests": 791,
+    "upstreamBytes": 47075637
+  },
+  {
+    "time": "2026-11-13T06:50:26.129Z",
+    "availableMiB": 5762,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "94060544",
+      "MemoryPeak": "95178752",
+      "CPUUsageNSec": "10399002000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "35999744",
+      "MemoryPeak": "37543936",
+      "CPUUsageNSec": "2391333000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 153436160,
+    "eventLoopP99Ms": 24.641535,
+    "upstreamRequests": 835,
+    "upstreamBytes": 47850730
+  },
+  {
+    "time": "2026-11-13T06:50:28.227Z",
+    "availableMiB": 5773,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "95055872",
+      "MemoryPeak": "95354880",
+      "CPUUsageNSec": "10811254000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "37683200",
+      "MemoryPeak": "37695488",
+      "CPUUsageNSec": "2509263000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 153829376,
+    "eventLoopP99Ms": 109.510655,
+    "upstreamRequests": 872,
+    "upstreamBytes": 49642957
+  },
+  {
+    "time": "2026-11-13T06:50:30.328Z",
+    "availableMiB": 5761,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "95232000",
+      "MemoryPeak": "95506432",
+      "CPUUsageNSec": "11098979000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "36769792",
+      "MemoryPeak": "38182912",
+      "CPUUsageNSec": "2703996000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 153829376,
+    "eventLoopP99Ms": 22.495231,
+    "upstreamRequests": 921,
+    "upstreamBytes": 50809350
+  },
+  {
+    "time": "2026-11-13T06:50:32.368Z",
+    "availableMiB": 5755,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "94982144",
+      "MemoryPeak": "95944704",
+      "CPUUsageNSec": "11496051000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "36704256",
+      "MemoryPeak": "38182912",
+      "CPUUsageNSec": "2810228000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 153829376,
+    "eventLoopP99Ms": 99.483647,
+    "upstreamRequests": 968,
+    "upstreamBytes": 53034635
+  },
+  {
+    "time": "2026-11-13T06:50:34.393Z",
+    "availableMiB": 5752,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "95318016",
+      "MemoryPeak": "96161792",
+      "CPUUsageNSec": "11845972000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "37408768",
+      "MemoryPeak": "38182912",
+      "CPUUsageNSec": "2907519000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 153829376,
+    "eventLoopP99Ms": 24.018943,
+    "upstreamRequests": 1011,
+    "upstreamBytes": 54367764
+  },
+  {
+    "time": "2026-11-13T06:50:36.428Z",
+    "availableMiB": 5821,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "95236096",
+      "MemoryPeak": "96161792",
+      "CPUUsageNSec": "12031640000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "38146048",
+      "MemoryPeak": "38182912",
+      "CPUUsageNSec": "2991432000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 153960448,
+    "eventLoopP99Ms": 24.674303,
+    "upstreamRequests": 1052,
+    "upstreamBytes": 56039730
+  },
+  {
+    "time": "2026-11-13T06:50:38.459Z",
+    "availableMiB": 5875,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "95039488",
+      "MemoryPeak": "96161792",
+      "CPUUsageNSec": "12291842000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "38105088",
+      "MemoryPeak": "38690816",
+      "CPUUsageNSec": "3080579000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 153960448,
+    "eventLoopP99Ms": 21.463039,
+    "upstreamRequests": 1093,
+    "upstreamBytes": 57425804
+  },
+  {
+    "time": "2026-11-13T06:50:40.527Z",
+    "availableMiB": 5907,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "95629312",
+      "MemoryPeak": "96161792",
+      "CPUUsageNSec": "12642161000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "38961152",
+      "MemoryPeak": "39235584",
+      "CPUUsageNSec": "3174913000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 154091520,
+    "eventLoopP99Ms": 24.231935,
+    "upstreamRequests": 1146,
+    "upstreamBytes": 58169885
+  },
+  {
+    "time": "2026-11-13T06:50:42.637Z",
+    "availableMiB": 5898,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "95051776",
+      "MemoryPeak": "96215040",
+      "CPUUsageNSec": "13160652000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "39358464",
+      "MemoryPeak": "39751680",
+      "CPUUsageNSec": "3279037000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 154222592,
+    "eventLoopP99Ms": 27.951103,
+    "upstreamRequests": 1202,
+    "upstreamBytes": 59504305
+  },
+  {
+    "time": "2026-11-13T06:50:44.670Z",
+    "availableMiB": 5904,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "95612928",
+      "MemoryPeak": "96215040",
+      "CPUUsageNSec": "13545913000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "42848256",
+      "MemoryPeak": "43155456",
+      "CPUUsageNSec": "3429125000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 154746880,
+    "eventLoopP99Ms": 25.821183,
+    "upstreamRequests": 1284,
+    "upstreamBytes": 63495836
+  },
+  {
+    "time": "2026-11-13T06:50:46.695Z",
+    "availableMiB": 5919,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "96493568",
+      "MemoryPeak": "97665024",
+      "CPUUsageNSec": "13949311000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "43102208",
+      "MemoryPeak": "43241472",
+      "CPUUsageNSec": "3528014000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 155664384,
+    "eventLoopP99Ms": 110.428159,
+    "upstreamRequests": 1330,
+    "upstreamBytes": 66566842
+  },
+  {
+    "time": "2026-11-13T06:50:48.756Z",
+    "availableMiB": 5921,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "96542720",
+      "MemoryPeak": "97665024",
+      "CPUUsageNSec": "14191235000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "42668032",
+      "MemoryPeak": "43241472",
+      "CPUUsageNSec": "3629184000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 155664384,
+    "eventLoopP99Ms": 25.083903,
+    "upstreamRequests": 1376,
+    "upstreamBytes": 68249131
+  },
+  {
+    "time": "2026-11-13T06:50:50.786Z",
+    "availableMiB": 5929,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "96714752",
+      "MemoryPeak": "97665024",
+      "CPUUsageNSec": "14456507000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "42979328",
+      "MemoryPeak": "43651072",
+      "CPUUsageNSec": "3729208000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 155664384,
+    "eventLoopP99Ms": 23.101439,
+    "upstreamRequests": 1422,
+    "upstreamBytes": 68984202
+  },
+  {
+    "time": "2026-11-13T06:50:52.818Z",
+    "availableMiB": 5928,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "96305152",
+      "MemoryPeak": "97665024",
+      "CPUUsageNSec": "14828820000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "39952384",
+      "MemoryPeak": "43651072",
+      "CPUUsageNSec": "3899463000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 155664384,
+    "eventLoopP99Ms": 24.788991,
+    "upstreamRequests": 1469,
+    "upstreamBytes": 72036380
+  },
+  {
+    "time": "2026-11-13T06:50:54.839Z",
+    "availableMiB": 5946,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "96460800",
+      "MemoryPeak": "97665024",
+      "CPUUsageNSec": "15199942000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "39698432",
+      "MemoryPeak": "43651072",
+      "CPUUsageNSec": "3988623000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 155664384,
+    "eventLoopP99Ms": 22.609919,
+    "upstreamRequests": 1522,
+    "upstreamBytes": 74433848
+  },
+  {
+    "time": "2026-11-13T06:50:56.868Z",
+    "availableMiB": 5936,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "96657408",
+      "MemoryPeak": "97665024",
+      "CPUUsageNSec": "15431728000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "39800832",
+      "MemoryPeak": "43651072",
+      "CPUUsageNSec": "4068002000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 155664384,
+    "eventLoopP99Ms": 28.950527,
+    "upstreamRequests": 1580,
+    "upstreamBytes": 75749380
+  },
+  {
+    "time": "2026-11-13T06:50:58.902Z",
+    "availableMiB": 5814,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "96559104",
+      "MemoryPeak": "97730560",
+      "CPUUsageNSec": "15911628000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "41644032",
+      "MemoryPeak": "43651072",
+      "CPUUsageNSec": "4145159000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 155664384,
+    "eventLoopP99Ms": 104.988671,
+    "upstreamRequests": 1638,
+    "upstreamBytes": 79918374
+  },
+  {
+    "time": "2026-11-13T06:51:00.958Z",
+    "availableMiB": 5801,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "96911360",
+      "MemoryPeak": "97730560",
+      "CPUUsageNSec": "16254187000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "41709568",
+      "MemoryPeak": "43651072",
+      "CPUUsageNSec": "4222795000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 155664384,
+    "eventLoopP99Ms": 23.019519,
+    "upstreamRequests": 1690,
+    "upstreamBytes": 81282693
+  },
+  {
+    "time": "2026-11-13T06:51:03.028Z",
+    "availableMiB": 5835,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "97202176",
+      "MemoryPeak": "98533376",
+      "CPUUsageNSec": "16600406000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "41209856",
+      "MemoryPeak": "43651072",
+      "CPUUsageNSec": "4307344000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 155664384,
+    "eventLoopP99Ms": 20.905983,
+    "upstreamRequests": 1740,
+    "upstreamBytes": 83261238
+  },
+  {
+    "time": "2026-11-13T06:51:05.061Z",
+    "availableMiB": 5903,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "96833536",
+      "MemoryPeak": "98533376",
+      "CPUUsageNSec": "16966652000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "40538112",
+      "MemoryPeak": "43651072",
+      "CPUUsageNSec": "4430991000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 155664384,
+    "eventLoopP99Ms": 21.643263,
+    "upstreamRequests": 1792,
+    "upstreamBytes": 86683535
+  },
+  {
+    "time": "2026-11-13T06:51:07.096Z",
+    "availableMiB": 5906,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "96661504",
+      "MemoryPeak": "98533376",
+      "CPUUsageNSec": "17381872000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "40562688",
+      "MemoryPeak": "43651072",
+      "CPUUsageNSec": "4522597000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 155795456,
+    "eventLoopP99Ms": 21.381119,
+    "upstreamRequests": 1844,
+    "upstreamBytes": 88780793
+  },
+  {
+    "time": "2026-11-13T06:51:09.159Z",
+    "availableMiB": 5924,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "97853440",
+      "MemoryPeak": "98533376",
+      "CPUUsageNSec": "17747810000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "40828928",
+      "MemoryPeak": "43651072",
+      "CPUUsageNSec": "4597484000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 155795456,
+    "eventLoopP99Ms": 23.560191,
+    "upstreamRequests": 1904,
+    "upstreamBytes": 91476391
+  },
+  {
+    "time": "2026-11-13T06:51:11.181Z",
+    "availableMiB": 5920,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "97902592",
+      "MemoryPeak": "99737600",
+      "CPUUsageNSec": "18196422000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "41365504",
+      "MemoryPeak": "43651072",
+      "CPUUsageNSec": "4707564000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 156721152,
+    "eventLoopP99Ms": 101.187583,
+    "upstreamRequests": 1945,
+    "upstreamBytes": 94352690
+  },
+  {
+    "time": "2026-11-13T06:51:13.210Z",
+    "availableMiB": 5952,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "98197504",
+      "MemoryPeak": "99737600",
+      "CPUUsageNSec": "18422477000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "40321024",
+      "MemoryPeak": "43651072",
+      "CPUUsageNSec": "4804039000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 156721152,
+    "eventLoopP99Ms": 34.504703,
+    "upstreamRequests": 1999,
+    "upstreamBytes": 95929665
+  },
+  {
+    "time": "2026-11-13T06:51:15.242Z",
+    "availableMiB": 5964,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "98017280",
+      "MemoryPeak": "99737600",
+      "CPUUsageNSec": "18720166000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "40771584",
+      "MemoryPeak": "43651072",
+      "CPUUsageNSec": "4896332000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 156721152,
+    "eventLoopP99Ms": 100.073471,
+    "upstreamRequests": 2049,
+    "upstreamBytes": 97944932
+  },
+  {
+    "time": "2026-11-13T06:51:17.273Z",
+    "availableMiB": 5958,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "98496512",
+      "MemoryPeak": "99737600",
+      "CPUUsageNSec": "19234617000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "45043712",
+      "MemoryPeak": "45068288",
+      "CPUUsageNSec": "5036401000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 157245440,
+    "eventLoopP99Ms": 101.318655,
+    "upstreamRequests": 2100,
+    "upstreamBytes": 102514957
+  },
+  {
+    "time": "2026-11-13T06:51:19.297Z",
+    "availableMiB": 5973,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "98738176",
+      "MemoryPeak": "99901440",
+      "CPUUsageNSec": "19627092000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "40345600",
+      "MemoryPeak": "45068288",
+      "CPUUsageNSec": "5131931000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 157769728,
+    "eventLoopP99Ms": 100.925439,
+    "upstreamRequests": 2154,
+    "upstreamBytes": 104659441
+  },
+  {
+    "time": "2026-11-13T06:51:21.355Z",
+    "availableMiB": 5933,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "98525184",
+      "MemoryPeak": "99901440",
+      "CPUUsageNSec": "19866030000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "40062976",
+      "MemoryPeak": "45068288",
+      "CPUUsageNSec": "5213092000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 157769728,
+    "eventLoopP99Ms": 27.705343,
+    "upstreamRequests": 2203,
+    "upstreamBytes": 105900180
+  },
+  {
+    "time": "2026-11-13T06:51:23.383Z",
+    "availableMiB": 5899,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "97751040",
+      "MemoryPeak": "99901440",
+      "CPUUsageNSec": "20462608000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "45174784",
+      "MemoryPeak": "45441024",
+      "CPUUsageNSec": "5365982000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 157769728,
+    "eventLoopP99Ms": 108.789759,
+    "upstreamRequests": 2258,
+    "upstreamBytes": 110743931
+  },
+  {
+    "time": "2026-11-13T06:51:25.429Z",
+    "availableMiB": 5919,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "97755136",
+      "MemoryPeak": "99901440",
+      "CPUUsageNSec": "20696604000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "42074112",
+      "MemoryPeak": "45441024",
+      "CPUUsageNSec": "5466095000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 157130752,
+    "eventLoopP99Ms": 25.526271,
+    "upstreamRequests": 2312,
+    "upstreamBytes": 112118875
+  },
+  {
+    "time": "2026-11-13T06:51:27.459Z",
+    "availableMiB": 5925,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "98254848",
+      "MemoryPeak": "99901440",
+      "CPUUsageNSec": "21139818000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "42016768",
+      "MemoryPeak": "45441024",
+      "CPUUsageNSec": "5551915000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 157130752,
+    "eventLoopP99Ms": 23.085055,
+    "upstreamRequests": 2356,
+    "upstreamBytes": 114574961
+  },
+  {
+    "time": "2026-11-13T06:51:29.559Z",
+    "availableMiB": 5924,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "97366016",
+      "MemoryPeak": "99901440",
+      "CPUUsageNSec": "21507267000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "42065920",
+      "MemoryPeak": "45441024",
+      "CPUUsageNSec": "5653852000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 157130752,
+    "eventLoopP99Ms": 23.953407,
+    "upstreamRequests": 2405,
+    "upstreamBytes": 116206676
+  },
+  {
+    "time": "2026-11-13T06:51:31.596Z",
+    "availableMiB": 5924,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "97419264",
+      "MemoryPeak": "99901440",
+      "CPUUsageNSec": "21803622000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "42541056",
+      "MemoryPeak": "45441024",
+      "CPUUsageNSec": "5764652000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 157130752,
+    "eventLoopP99Ms": 23.560191,
+    "upstreamRequests": 2455,
+    "upstreamBytes": 119300855
+  },
+  {
+    "time": "2026-11-13T06:51:33.656Z",
+    "availableMiB": 5921,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "97677312",
+      "MemoryPeak": "99901440",
+      "CPUUsageNSec": "22339194000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "43016192",
+      "MemoryPeak": "45441024",
+      "CPUUsageNSec": "5858597000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 157130752,
+    "eventLoopP99Ms": 107.872255,
+    "upstreamRequests": 2507,
+    "upstreamBytes": 123604921
+  },
+  {
+    "time": "2026-11-13T06:51:35.683Z",
+    "availableMiB": 5926,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "97755136",
+      "MemoryPeak": "99901440",
+      "CPUUsageNSec": "22855373000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "42598400",
+      "MemoryPeak": "45441024",
+      "CPUUsageNSec": "5992654000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 157130752,
+    "eventLoopP99Ms": 100.007935,
+    "upstreamRequests": 2552,
+    "upstreamBytes": 126535206
+  },
+  {
+    "time": "2026-11-13T06:51:37.741Z",
+    "availableMiB": 5922,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "98279424",
+      "MemoryPeak": "99901440",
+      "CPUUsageNSec": "23124614000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "39272448",
+      "MemoryPeak": "45441024",
+      "CPUUsageNSec": "6084227000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 157130752,
+    "eventLoopP99Ms": 22.331391,
+    "upstreamRequests": 2601,
+    "upstreamBytes": 128065315
+  },
+  {
+    "time": "2026-11-13T06:51:39.777Z",
+    "availableMiB": 5934,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "98304000",
+      "MemoryPeak": "99901440",
+      "CPUUsageNSec": "23483582000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "38998016",
+      "MemoryPeak": "45441024",
+      "CPUUsageNSec": "6190421000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 157130752,
+    "eventLoopP99Ms": 103.546879,
+    "upstreamRequests": 2651,
+    "upstreamBytes": 130745540
+  },
+  {
+    "time": "2026-11-13T06:51:41.858Z",
+    "availableMiB": 5934,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "97984512",
+      "MemoryPeak": "99901440",
+      "CPUUsageNSec": "23817240000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "38780928",
+      "MemoryPeak": "45441024",
+      "CPUUsageNSec": "6279788000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 157130752,
+    "eventLoopP99Ms": 100.073471,
+    "upstreamRequests": 2693,
+    "upstreamBytes": 132564726
+  },
+  {
+    "time": "2026-11-13T06:51:43.883Z",
+    "availableMiB": 5934,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "97886208",
+      "MemoryPeak": "99901440",
+      "CPUUsageNSec": "23958847000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "39133184",
+      "MemoryPeak": "45441024",
+      "CPUUsageNSec": "6327205000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 157392896,
+    "eventLoopP99Ms": 21.577727,
+    "upstreamRequests": 2733,
+    "upstreamBytes": 134246549
+  },
+  {
+    "time": "2026-11-13T06:51:45.912Z",
+    "availableMiB": 5925,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "97771520",
+      "MemoryPeak": "99901440",
+      "CPUUsageNSec": "23972933000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "39124992",
+      "MemoryPeak": "45441024",
+      "CPUUsageNSec": "6332329000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 157392896,
+    "eventLoopP99Ms": 21.512191,
+    "upstreamRequests": 2733,
+    "upstreamBytes": 134246549
+  },
+  {
+    "time": "2026-11-13T06:51:48.129Z",
+    "availableMiB": 5921,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "97452032",
+      "MemoryPeak": "99901440",
+      "CPUUsageNSec": "23989066000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "39268352",
+      "MemoryPeak": "45441024",
+      "CPUUsageNSec": "6339857000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 157392896,
+    "eventLoopP99Ms": 22.020095,
+    "upstreamRequests": 2733,
+    "upstreamBytes": 134246549
+  },
+  {
+    "time": "2026-11-13T06:51:50.228Z",
+    "availableMiB": 5916,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "98480128",
+      "MemoryPeak": "99901440",
+      "CPUUsageNSec": "24051279000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "39526400",
+      "MemoryPeak": "45441024",
+      "CPUUsageNSec": "6369825000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 157392896,
+    "eventLoopP99Ms": 22.347775,
+    "upstreamRequests": 2733,
+    "upstreamBytes": 134246549
+  },
+  {
+    "time": "2026-11-13T06:51:52.330Z",
+    "availableMiB": 5921,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "97378304",
+      "MemoryPeak": "99901440",
+      "CPUUsageNSec": "24081356000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "39043072",
+      "MemoryPeak": "45441024",
+      "CPUUsageNSec": "6383780000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 157392896,
+    "eventLoopP99Ms": 21.364735,
+    "upstreamRequests": 2733,
+    "upstreamBytes": 134246549
+  },
+  {
+    "time": "2026-11-13T06:51:54.367Z",
+    "availableMiB": 5928,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "97607680",
+      "MemoryPeak": "99901440",
+      "CPUUsageNSec": "24095776000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "39301120",
+      "MemoryPeak": "45441024",
+      "CPUUsageNSec": "6394460000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 157392896,
+    "eventLoopP99Ms": 21.463039,
+    "upstreamRequests": 2733,
+    "upstreamBytes": 134246549
+  },
+  {
+    "time": "2026-11-13T06:51:56.396Z",
+    "availableMiB": 5928,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "97730560",
+      "MemoryPeak": "99901440",
+      "CPUUsageNSec": "24106995000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "39284736",
+      "MemoryPeak": "45441024",
+      "CPUUsageNSec": "6399295000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 157392896,
+    "eventLoopP99Ms": 21.528575,
+    "upstreamRequests": 2733,
+    "upstreamBytes": 134246549
+  },
+  {
+    "time": "2026-11-13T06:51:58.426Z",
+    "availableMiB": 5810,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "97226752",
+      "MemoryPeak": "99901440",
+      "CPUUsageNSec": "24165109000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "37720064",
+      "MemoryPeak": "45441024",
+      "CPUUsageNSec": "6424266000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 156721152,
+    "eventLoopP99Ms": 22.085631,
+    "upstreamRequests": 2733,
+    "upstreamBytes": 134246549
+  },
+  {
+    "time": "2026-11-13T06:52:00.528Z",
+    "availableMiB": 5798,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "97456128",
+      "MemoryPeak": "99901440",
+      "CPUUsageNSec": "24181064000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "37396480",
+      "MemoryPeak": "45441024",
+      "CPUUsageNSec": "6432390000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 156721152,
+    "eventLoopP99Ms": 21.102591,
+    "upstreamRequests": 2733,
+    "upstreamBytes": 134246549
+  },
+  {
+    "time": "2026-11-13T06:52:02.557Z",
+    "availableMiB": 5842,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "96636928",
+      "MemoryPeak": "99901440",
+      "CPUUsageNSec": "24188329000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "36720640",
+      "MemoryPeak": "45441024",
+      "CPUUsageNSec": "6437896000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 156721152,
+    "eventLoopP99Ms": 20.332543,
+    "upstreamRequests": 2733,
+    "upstreamBytes": 134246549
+  },
+  {
+    "time": "2026-11-13T06:52:04.591Z",
+    "availableMiB": 5906,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "97128448",
+      "MemoryPeak": "99901440",
+      "CPUUsageNSec": "24207144000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "36974592",
+      "MemoryPeak": "45441024",
+      "CPUUsageNSec": "6449403000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 156721152,
+    "eventLoopP99Ms": 20.398079,
+    "upstreamRequests": 2733,
+    "upstreamBytes": 134246549
+  },
+  {
+    "time": "2026-11-13T06:52:06.727Z",
+    "availableMiB": 5911,
+    "server": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "91348992",
+      "MemoryPeak": "99901440",
+      "CPUUsageNSec": "24215480000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "402653184",
+      "MemorySwapMax": "0"
+    },
+    "tester": {
+      "ActiveState": "active",
+      "Result": "success",
+      "MemoryCurrent": "37122048",
+      "MemoryPeak": "45441024",
+      "CPUUsageNSec": "6455581000",
+      "TasksCurrent": "9",
+      "CPUQuotaPerSecUSec": "500ms",
+      "MemoryMax": "268435456",
+      "MemorySwapMax": "0"
+    },
+    "serverRss": 151015424,
+    "eventLoopP99Ms": 20.676607,
+    "upstreamRequests": 2733,
+    "upstreamBytes": 134246549
+  }
+]

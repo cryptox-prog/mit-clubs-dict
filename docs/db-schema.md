@@ -1,142 +1,227 @@
 # Database Schema
 
-This model keeps clubs and student projects as independent entities, while events are hosted by at least one club, student project, department, or external organization.
+This schema models clubs, student projects, and events as separate Supabase/PostgreSQL tables. Domains and year groups are normalized through join tables so filtering can stay structured without duplicating labels across records.
 
-## Core Tables
+## Clubs
 
 ```sql
-create type entity_kind as enum ('club', 'student_project', 'organization');
-create type event_host_kind as enum ('entity', 'external_organization');
-create type audience_scope as enum ('everyone', 'mit_students', 'custom');
-
-create table entities (
+create table clubs (
   id uuid primary key default gen_random_uuid(),
-  kind entity_kind not null,
-  name text not null,
-  slug text not null unique,
-  subtitle text,
-  description text not null,
-  icon_url text,
-  website_url text,
-  application_url text,
-  application_start_at timestamptz,
-  application_end_at timestamptz not null,
-  default_eligibility_rule_id uuid,
-  created_at timestamptz not null default now(),
-  updated_at timestamptz not null default now()
-);
 
+  name text not null,
+  description text,
+
+  icon_path text,
+
+  application_start date,
+  registration_deadline date,
+
+  apply_link text,
+
+  created_at timestamptz default now(),
+  updated_at timestamptz default now()
+);
+```
+
+## Student Projects
+
+```sql
+create table student_projects (
+  id uuid primary key default gen_random_uuid(),
+
+  club_id uuid references clubs(id) on delete cascade,
+
+  title text not null,
+  description text,
+
+  icon_path text,
+
+  application_start date,
+  registration_deadline date,
+
+  apply_link text,
+
+  created_at timestamptz default now(),
+  updated_at timestamptz default now()
+);
+```
+
+## Events
+
+```sql
 create table events (
   id uuid primary key default gen_random_uuid(),
-  name text not null,
-  slug text not null unique,
-  description text not null,
-  icon_url text,
-  event_start_at timestamptz,
-  event_end_at timestamptz,
-  venue text,
-  application_url text,
-  application_start_at timestamptz,
-  application_end_at timestamptz not null,
-  eligibility_rule_id uuid,
-  min_team_size integer,
-  max_team_size integer,
-  created_at timestamptz not null default now(),
-  updated_at timestamptz not null default now()
-);
 
-create table external_organizations (
-  id uuid primary key default gen_random_uuid(),
-  name text not null,
-  slug text not null unique,
-  website_url text
-);
+  club_id uuid references clubs(id) on delete cascade,
 
-create table event_hosts (
-  event_id uuid not null references events(id) on delete cascade,
-  host_kind event_host_kind not null,
-  entity_id uuid references entities(id) on delete cascade,
-  external_organization_id uuid references external_organizations(id) on delete cascade,
-  primary key (event_id, host_kind, entity_id, external_organization_id),
-  check (
-    (host_kind = 'entity' and entity_id is not null and external_organization_id is null)
-    or
-    (host_kind = 'external_organization' and external_organization_id is not null and entity_id is null)
-  )
+  title text not null,
+  description text,
+
+  icon_path text,
+
+  application_start date,
+  registration_deadline date,
+
+  event_start timestamptz,
+  event_end timestamptz,
+
+  participation_type text check (
+    participation_type in ('INDIVIDUAL', 'TEAM')
+  ),
+
+  apply_link text,
+
+  created_at timestamptz default now(),
+  updated_at timestamptz default now()
 );
 ```
 
-## Eligibility
-
-Use one eligibility rule per application surface. This avoids hard-coding every possible phrase like "only first and second years" as separate enum values.
-
-```sql
-create table eligibility_rules (
-  id uuid primary key default gen_random_uuid(),
-  scope audience_scope not null,
-  label text not null,
-  created_at timestamptz not null default now()
-);
-
-create table eligibility_rule_years (
-  eligibility_rule_id uuid not null references eligibility_rules(id) on delete cascade,
-  study_year smallint not null check (study_year between 1 and 4),
-  primary key (eligibility_rule_id, study_year)
-);
-
-create table eligibility_rule_branches (
-  eligibility_rule_id uuid not null references eligibility_rules(id) on delete cascade,
-  branch_code text not null,
-  primary key (eligibility_rule_id, branch_code)
-);
-
-alter table entities
-  add constraint entities_default_eligibility_rule_id_fkey
-  foreign key (default_eligibility_rule_id) references eligibility_rules(id);
-
-alter table events
-  add constraint events_eligibility_rule_id_fkey
-  foreign key (eligibility_rule_id) references eligibility_rules(id);
-```
-
-Example meanings:
-
-```text
-everyone: label = "Everybody", no year rows.
-mit_students: label = "Only MIT Students", no year rows.
-custom + years 1: label = "Only First Years".
-custom + years 1,2: label = "Only First and Second Years".
-custom + years 3: label = "Only Third Years".
-custom + years 4: label = "Only Fourth Years".
-```
-
-## Discovery Metadata
+## Domains
 
 ```sql
 create table domains (
   id uuid primary key default gen_random_uuid(),
-  name text not null unique
-);
 
-create table entity_domains (
-  entity_id uuid not null references entities(id) on delete cascade,
-  domain_id uuid not null references domains(id) on delete cascade,
-  primary key (entity_id, domain_id)
+  name text unique not null
 );
+```
 
+Example domain rows:
+
+```text
+AI
+Web Development
+Robotics
+Cyber Security
+UI/UX
+```
+
+## Year Groups
+
+```sql
+create table year_groups (
+  id smallint primary key,
+
+  name text unique not null
+);
+```
+
+Initial rows:
+
+| id | name |
+| --- | --- |
+| 1 | FIRST_YEAR |
+| 2 | SECOND_YEAR |
+| 3 | THIRD_YEAR |
+| 4 | FOURTH_YEAR |
+| 5 | EVERYONE |
+
+## Club Domains
+
+```sql
+create table club_domains (
+  club_id uuid references clubs(id) on delete cascade,
+  domain_id uuid references domains(id) on delete cascade,
+
+  primary key (club_id, domain_id)
+);
+```
+
+## Project Domains
+
+```sql
+create table project_domains (
+  project_id uuid references student_projects(id) on delete cascade,
+  domain_id uuid references domains(id) on delete cascade,
+
+  primary key (project_id, domain_id)
+);
+```
+
+## Event Domains
+
+```sql
 create table event_domains (
-  event_id uuid not null references events(id) on delete cascade,
-  domain_id uuid not null references domains(id) on delete cascade,
+  event_id uuid references events(id) on delete cascade,
+  domain_id uuid references domains(id) on delete cascade,
+
   primary key (event_id, domain_id)
 );
 ```
 
+## Club Open To
+
+```sql
+create table club_open_to (
+  club_id uuid references clubs(id) on delete cascade,
+  year_group_id smallint references year_groups(id),
+
+  primary key (club_id, year_group_id)
+);
+```
+
+## Project Open To
+
+```sql
+create table project_open_to (
+  project_id uuid references student_projects(id) on delete cascade,
+  year_group_id smallint references year_groups(id),
+
+  primary key (project_id, year_group_id)
+);
+```
+
+## Event Open To
+
+```sql
+create table event_open_to (
+  event_id uuid references events(id) on delete cascade,
+  year_group_id smallint references year_groups(id),
+
+  primary key (event_id, year_group_id)
+);
+```
+
+## Supabase Storage
+
+Create one bucket named `assets`.
+
+```text
+assets/
+  clubs/
+  projects/
+  events/
+```
+
+Store only the relative path in `icon_path`.
+
+```text
+clubs/acm.png
+projects/ai-bot.png
+events/hackathon-2026.png
+```
+
+## Relationships
+
+```text
+Club
+ ├──< Club Domains >── Domain
+ ├──< Club Open To >── Year Group
+ │
+ ├── Student Projects
+ │      ├──< Project Domains >── Domain
+ │      └──< Project Open To >── Year Group
+ │
+ └── Events
+        ├──< Event Domains >── Domain
+        └──< Event Open To >── Year Group
+```
+
 ## Notes
 
-- `entities.kind = 'club'` represents clubs.
-- `entities.kind = 'student_project'` represents student projects.
-- `entities.kind = 'organization'` is for MIT departments or official bodies that can host events but are not clubs or student projects.
-- `application_end_at` is required on both `entities` and `events`, because every card needs an application deadline.
-- Team size lives on `events`, because it generally describes event participation. Add a separate recruitment/application table later if clubs or student projects need role-specific team/group constraints.
-- Eligibility lives in `eligibility_rules`, so the UI can render a friendly `label` while filters can still query structured year/branch/scope rows.
-- Events should have at least one row in `event_hosts`; enforce that in service code or with a deferred database trigger.
+- Clubs use `name`; student projects and events use `title`.
+- `icon_path` should store the Supabase Storage path, not a duplicated public URL.
+- `registration_deadline` is the application close date shown on cards.
+- `participation_type` only applies to events and is limited to `INDIVIDUAL` or `TEAM`.
+- Domains and open-to year groups are many-to-many so each card can support multiple filters.
+- This structure leaves room for future tables such as tags, organizers, gallery images, registrations, and club members.

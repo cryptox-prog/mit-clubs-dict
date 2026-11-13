@@ -42,6 +42,50 @@
     --shadow-soft: 0 1px 2px rgba(60, 56, 54, 0.08);
 }
 
+:root[data-theme="dark"] {
+    --text-primary: #ebdbb2;
+    --bg-main: #1d2021;
+    --bg-dull: #282828;
+    --bg-surface: #32302f;
+    --bg-elevated: #3c3836;
+
+    --cursor-text: #1d2021;
+    --cursor: #ebdbb2;
+    --selection-text: #1d2021;
+    --selection-bg: #d5c4a1;
+
+    --text-secondary: #d5c4a1;
+    --text-muted: #bdae93;
+
+    --accent-black: #1d2021;
+    --accent-red: #fb4934;
+    --accent-green: #b8bb26;
+    --accent-yellow: #fabd2f;
+    --accent-blue: #83a598;
+    --accent-magenta: #d3869b;
+    --accent-cyan: #8ec07c;
+    --accent-white: #fbf1c7;
+
+    --bright-black: #928374;
+    --bright-red: #cc241d;
+    --bright-green: #98971a;
+    --bright-yellow: #d79921;
+    --bright-blue: #458588;
+    --bright-magenta: #b16286;
+    --bright-cyan: #689d6a;
+    --bright-white: #fbf1c7;
+
+    --border-subtle: #504945;
+    --border-strong: #7c6f64;
+
+    --success: var(--accent-green);
+    --warning: var(--accent-yellow);
+    --error: var(--accent-red);
+
+    --link-color: var(--accent-blue);
+    --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
 
 
 :root {
@@ -61,6 +105,8 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--bg-main);
+    color: var(--text-primary);
+    transition: background-color 240ms ease, color 240ms ease;
 }
 
 /* Cursor & selection visuals */
@@ -76,3 +122,72 @@ body {
 main {
     flex: 1;
 }
+
+.theme-burst {
+    --burst-color: #282828;
+    position: fixed;
+    top: 30px;
+    right: calc(4% + 22px);
+    z-index: 46;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid color-mix(in srgb, var(--burst-color) 72%, transparent);
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--burst-color) 34%, transparent);
+    pointer-events: none;
+    transform: translate(50%, -50%) scale(1);
+    animation: theme-burst 520ms ease-out forwards;
+}
+
+.theme-burst-light {
+    --burst-color: #f2e5bc;
+}
+
+.theme-burst-dark {
+    --burst-color: #1d2021;
+}
+
+@keyframes theme-burst {
+    0% {
+        opacity: 0.85;
+        transform: translate(50%, -50%) scale(0.8);
+        box-shadow: 0 0 0 0 color-mix(in srgb, var(--burst-color) 42%, transparent);
+    }
+
+    70% {
+        opacity: 0.35;
+        box-shadow: 0 0 0 24px color-mix(in srgb, var(--burst-color) 18%, transparent);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(50%, -50%) scale(1.45);
+        box-shadow: 0 0 0 38px transparent;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body {
+        transition: none;
+    }
+
+    .theme-burst {
+        animation-duration: 1ms;
+    }
+}
+
+/* Palette-aware scrollbars for the page and scrollable panels. */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-blue) var(--bg-dull);
+}
+
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-track { background: var(--bg-dull); }
+*::-webkit-scrollbar-thumb {
+    background: var(--accent-blue);
+    border: 2px solid var(--bg-dull);
+    border-radius: 0;
+}
+*::-webkit-scrollbar-thumb:hover { background: var(--accent-cyan); }
+*::-webkit-scrollbar-corner { background: var(--bg-dull); }

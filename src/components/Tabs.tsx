@@ -16,7 +16,7 @@ const Tabs: React.FC<TabsProps> = ({ tabs, selectedIndex = 0, onChange }) => {
 
   const handleClick = (i: number) => {
     setActive(i)
-    onChange && onChange(i)
+    onChange?.(i)
   }
 
   return (

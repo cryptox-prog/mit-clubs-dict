@@ -1,0 +1,71 @@
+{
+  "runId": "20261113064912",
+  "mode": "gradual-total-visitors",
+  "seed": 1192026,
+  "maxInFlight": 12,
+  "maxUpstreamRequests": 10000,
+  "maxUpstreamBytes": 134217728,
+  "maxClientRequests": 20000,
+  "maxClientBytes": 150994944,
+  "maxAnalyticsEvents": 500,
+  "minimumHostAvailableMiB": 1536,
+  "maxRunSeconds": 1000,
+  "stages": [
+    {
+      "targetUsers": 100,
+      "rps": 10,
+      "workers": 20,
+      "rampSeconds": 10,
+      "maxSeconds": 140
+    },
+    {
+      "targetUsers": 1000,
+      "rps": 18,
+      "workers": 48,
+      "rampSeconds": 15,
+      "maxSeconds": 420
+    },
+    {
+      "targetUsers": 10000,
+      "rps": 18,
+      "workers": 48,
+      "rampSeconds": 20,
+      "maxSeconds": 600
+    }
+  ],
+  "caps": {
+    "server": {
+      "memoryMiB": 384,
+      "cpuPercent": 50,
+      "heapMiB": 192
+    },
+    "tester": {
+      "memoryMiB": 256,
+      "cpuPercent": 50,
+      "heapMiB": 128
+    },
+    "swapMiB": 0,
+    "maxTasksEach": 64
+  },
+  "behavior": {
+    "warmReturningFraction": 0.35,
+    "searchProbability": 0.55,
+    "filterProbability": 0.3,
+    "projectsTabProbability": 0.3,
+    "eventsTabProbability": 0.1,
+    "scrollProbability": 0.35,
+    "visibleIcons": "2–4 plus 2 on some scrolls",
+    "thinkSeconds": "0.3–3.2 between interactions",
+    "analyticsSample": "1 in 100 visitors; load_test=true; at most 500 events"
+  },
+  "caveats": [
+    "Visitor counts are total gradually arriving sessions, not simultaneous users.",
+    "Protocol-level browsing model; no browser rendering/JS cost is benchmarked.",
+    "Warm visitor caches are an explicit assumption, not measured production behavior.",
+    "Search/filter operations are local and do not generate directory requests.",
+    "No accounts, listings, or files are created or edited.",
+    "Only sampled analytics are sent to PostHog; analytics events are synthetic and tagged.",
+    "Cloud remaining monthly usage is not available; this test has its own conservative additive quota.",
+    "No inference that 10000 concurrent users are supported is valid."
+  ]
+}

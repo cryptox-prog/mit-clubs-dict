@@ -1,187 +1,142 @@
 import './App.css'
 import TopBar from './components/TopBar'
+import AuthControl from './components/AuthControl'
+import ManagementDashboard from './components/ManagementDashboard'
+import { useAuth } from './hooks/useAuth'
 import Card from './components/Card'
 import Tabs from './components/Tabs'
 import FilterDialog from './components/FilterDialog'
 import FilterTags from './components/FilterTags'
 import React from 'react'
+import { resources } from './api/directory'
+import type { CategoryTab, DirectoryItem, YearGroup } from './api/directory'
+import { useDirectory } from './hooks/useDirectory'
+import { analytics } from './utils/analytics'
 
-function App() {
-    type CategoryTab = 'Clubs' | 'Student Projects' | 'Events'
-    type DirectoryCategory = 'Club' | 'Student Project' | 'Event'
-    type DirectoryItem = {
-        id: string
-        name: string
-        subtitle?: string
-        description: string
-        category: DirectoryCategory
-        icon_url: string
-        application_start?: Date
-        application_end: Date
-        event_date?: Date
-        event_end?: Date
-        team_size?: string
-        open_to?: string
-        domains?: string[]
-        application_link?: string
+const tabs: Array<{ label: CategoryTab; mobileLabel?: string }> = [
+    { label: 'Clubs' }, { label: 'Student Projects', mobileLabel: 'SP' }, { label: 'Events' },
+]
+function formatOpenTo(openTo: YearGroup[]) {
+    if (!openTo.length) return undefined
+    if (openTo.includes('EVERYONE')) return 'Everyone'
+    const labels: Record<YearGroup, string> = {
+        FIRST_YEAR: 'First Years', SECOND_YEAR: 'Second Years', THIRD_YEAR: 'Third Years',
+        FOURTH_YEAR: 'Fourth Years', EVERYONE: 'Everyone',
     }
-
-    const tabs: Array<{ label: CategoryTab; mobileLabel?: string }> = [
-        { label: 'Clubs' },
-        { label: 'Student Projects', mobileLabel: 'SP' },
-        { label: 'Events' },
-    ]
-
+    if (['FIRST_YEAR', 'SECOND_YEAR', 'THIRD_YEAR', 'FOURTH_YEAR'].every(year => openTo.includes(year as YearGroup))) return 'All Years'
+    return openTo.map(year => labels[year]).join(', ')
+}
+function getSubtitle(item: DirectoryItem) {
+    if (item.category === 'Event' && item.club_name) return `Hosted by ${item.club_name}`
+    if (item.category === 'Student Project') return 'Technical'
+    return item.club_kind ?? undefined
+}
+function App() {
+    const { user } = useAuth()
+    const [dashboardOpen, setDashboardOpen] = React.useState(false)
+    const closeDashboard = React.useCallback(() => setDashboardOpen(false), [])
     const [selectedTab, setSelectedTab] = React.useState<CategoryTab>('Clubs')
     const [filtersOpen, setFiltersOpen] = React.useState(false)
     const [filters, setFilters] = React.useState<string[]>([])
     const [searchQuery, setSearchQuery] = React.useState('')
+    const [theme, setTheme] = React.useState<'light' | 'dark'>('dark')
+    const [themeBurst, setThemeBurst] = React.useState(false)
+    const [themeBurstKey, setThemeBurstKey] = React.useState(0)
+    const [now, setNow] = React.useState(() => new Date())
+    const { items, loading, error, warning, retry } = useDirectory(resources[selectedTab])
+    const lastTab = React.useRef<string | null>(null)
+    const lastSearch = React.useRef<string | null>(null)
+    React.useEffect(() => {
+        if (lastTab.current === selectedTab) return
+        lastTab.current = selectedTab
+        analytics.capture('directory_tab_viewed', { category: selectedTab })
+    }, [selectedTab])
 
-    const handleApplyFilters = (f: string[]) => setFilters(f)
-    const handleRemoveFilter = (f: string) => setFilters(prev => prev.filter(p => p !== f))
-    const handleClearFilters = () => setFilters([])
+    React.useEffect(() => {
+        document.documentElement.dataset.theme = theme
+    }, [theme])
+    React.useEffect(() => {
+        if (!themeBurst) return
+        const burstTimer = window.setTimeout(() => setThemeBurst(false), 520)
+        return () => window.clearTimeout(burstTimer)
+    }, [themeBurst])
+    React.useEffect(() => {
+        const timer = window.setInterval(() => setNow(new Date()), 60000)
+        return () => window.clearInterval(timer)
+    }, [])
+
+    const domainOptions = [...new Set(items.flatMap(item => item.domains))].sort()
+    const q = searchQuery.trim().toLowerCase()
+    const filtered = items.filter(item => {
+        if (q && !item.name.toLowerCase().includes(q) && !(getSubtitle(item) ?? '').toLowerCase().includes(q)) return false
+        if (filters.length && !item.domains.some(domain => filters.includes(domain))
+            && !filters.includes(item.category === 'Student Project' ? 'Technical' : item.club_kind ?? '')) return false
+        return true
+    })
+    React.useEffect(() => {
+        if (!q) { lastSearch.current = null; return }
+        if (loading || error) return
+        const signature = JSON.stringify([selectedTab, q, filters])
+        if (lastSearch.current === signature) return
+        const timer = window.setTimeout(() => {
+            lastSearch.current = signature
+            analytics.capture('directory_searched', { category: selectedTab, query_length: q.length, result_count: filtered.length })
+        }, 700)
+        return () => window.clearTimeout(timer)
+    }, [q, selectedTab, filters, filtered.length, loading, error])
+    const changeFilters = (next: string[]) => {
+        setFilters(next)
+        analytics.capture('directory_filters_changed', { category: selectedTab, filter_count: next.length })
+    }
+    const handleToggleTheme = () => {
+        setTheme(current => current === 'dark' ? 'light' : 'dark')
+        setThemeBurst(true)
+        setThemeBurstKey(current => current + 1)
+    }
     return (
         <>
-            <TopBar />
-            <div className='main-container'>
-                <div className='greeting'>
+            {themeBurst && <div key={themeBurstKey} className={`theme-burst theme-burst-${theme}`} aria-hidden="true" />}
+            <TopBar theme={theme} onToggleTheme={handleToggleTheme} />
+            <main className="main-container">
+                <div className="greeting">
                     <h1>Clubs, Student Projects and Events</h1>
-                    <p>Discover and apply to the student organizations of Manipal Institiute of Technology</p>
+                    <p>Discover and apply to the student organizations of Manipal Institute of Technology</p>
                 </div>
-                <Tabs
-                    tabs={tabs}
-                    selectedIndex={tabs.findIndex(tab => tab.label === selectedTab)}
-                    onChange={(i) => setSelectedTab(tabs[i].label)}
-                />
-
-                <div className='filter-container'>
-                    <input
-                        placeholder='Search By Name'
-                        value={searchQuery}
-                        onChange={(e) => setSearchQuery(e.target.value)}
-                    />
+                <Tabs tabs={tabs} selectedIndex={tabs.findIndex(tab => tab.label === selectedTab)}
+                    onChange={index => setSelectedTab(tabs[index].label)} />
+                <div className="filter-container">
+                    <input aria-label="Search by name" placeholder="Search By Name" value={searchQuery}
+                        onChange={event => setSearchQuery(event.target.value)} />
                     <button aria-label="Open filters" onClick={() => setFiltersOpen(true)} />
                 </div>
-
-                <FilterTags filters={filters} onRemove={handleRemoveFilter} onClear={handleClearFilters} />
-
-                <FilterDialog
-                    open={filtersOpen}
-                    selectedFilters={filters}
-                    onApply={handleApplyFilters}
-                    onClose={() => setFiltersOpen(false)}
-                />
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', margin:'10px 0px 0px 0px' }}>
-                    {/* Cards data */}
-                    {(() => {
-                        const items: DirectoryItem[] = [
-                            {
-                                id: 'club-robotics',
-                                name: 'Tech Robotics Club',
-                                subtitle: 'Robotics Recruitment 2026',
-                                description: 'Join our club to build amazing robots and participate in national competitions.',
-                                category: 'Club',
-                                icon_url: 'https://cdn-icons-png.flaticon.com/512/1383/1383267.png',
-                                application_start: new Date('2026-02-01'),
-                                application_end: new Date('2026-02-28'),
-                                open_to: 'All Students',
-                                domains: ['AI', 'Automation'],
-                                application_link: 'https://techrobotics.example.com/apply',
-                            },
-                            {
-                                id: 'sp-rover',
-                                name: 'Mars Rover Manipal',
-                                subtitle: 'Student Project Recruitment 2026',
-                                description: 'Build rover systems across mechanical design, electronics, autonomy, and software.',
-                                category: 'Student Project',
-                                icon_url: 'https://cdn-icons-png.flaticon.com/512/3212/3212608.png',
-                                application_start: new Date('2026-02-10'),
-                                application_end: new Date('2026-03-05'),
-                                open_to: 'All Students',
-                                domains: ['AI', 'Automation'],
-                                application_link: 'https://marsrover.example.com/apply',
-                            },
-                            {
-                                id: 'event-hackathon',
-                                name: 'Hackathon 2026',
-                                subtitle: 'Hosted by Coding Club',
-                                description: 'Participate in a 48-hour coding marathon and showcase your skills.',
-                                category: 'Event',
-                                icon_url: 'https://cdn-icons-png.flaticon.com/512/2913/2913970.png',
-                                application_start: new Date('2026-02-05'),
-                                application_end: new Date('2026-02-15'),
-                                event_date: new Date('2026-03-01'),
-                                event_end: new Date('2026-03-03'),
-                                team_size: '2 - 4 Members',
-                                open_to: 'All Students',
-                                domains: ['Web', 'Mobile', 'AI'],
-                                application_link: 'https://codingclub.example.com/hackathon',
-                            },
-                            {
-                                id: 'event-photo',
-                                name: 'Photography Exhibition',
-                                subtitle: 'Hosted by Arts & Photography Club',
-                                description: 'Showcase your photography skills in our annual exhibition.',
-                                category: 'Event',
-                                icon_url: 'https://cdn-icons-png.flaticon.com/512/1383/1383269.png',
-                                event_date: new Date('2026-03-25'),
-                                event_end: new Date('2026-03-25'),
-                                application_end: new Date('2026-03-20'),
-                                team_size: 'Individual',
-                                open_to: 'All Students',
-                                domains: ['Photography', 'Arts'],
-                                application_link: 'https://artsclub.example.com/exhibition',
-                            },
-                        ]
-
-                        const q = searchQuery.trim().toLowerCase()
-
-                        const filtered = items.filter(item => {
-                            // tab filter
-                            if (selectedTab === 'Clubs' && item.category !== 'Club') return false
-                            if (selectedTab === 'Student Projects' && item.category !== 'Student Project') return false
-                            if (selectedTab === 'Events' && item.category !== 'Event') return false
-
-                            // search filter (match primary or secondary name)
-                            if (q) {
-                                const name = (item.name || '').toLowerCase()
-                                const subtitle = (item.subtitle || '').toLowerCase()
-                                if (!name.includes(q) && !subtitle.includes(q)) return false
-                            }
-
-                            // domain filters (match any)
-                            if (filters && filters.length > 0) {
-                                const domains = item.domains || []
-                                const matches = domains.some(d => filters.includes(d))
-                                if (!matches) return false
-                            }
-
-                            return true
-                        })
-
-                        return filtered.map(it => (
-                            <Card
-                                key={it.id}
-                                name={it.name}
-                                subtitle={it.subtitle}
-                                description={it.description}
-                                category={it.category}
-                                icon_url={it.icon_url}
-                                application_start={it.application_start}
-                                application_end={it.application_end}
-                                event_date={it.event_date}
-                                event_end={it.event_end}
-                                team_size={it.team_size}
-                                open_to={it.open_to}
-                                domains={it.domains}
-                                application_link={it.application_link}
-                            />
-                        ))
-                    })()}
-                </div>
-            </div>
+                <FilterTags filters={filters} onRemove={filter => changeFilters(filters.filter(value => value !== filter))}
+                    onClear={() => changeFilters([])} />
+                <FilterDialog open={filtersOpen} selectedFilters={filters} domainOptions={domainOptions}
+                    onApply={changeFilters} onClose={() => setFiltersOpen(false)} />
+                <section className="directory-list" aria-label={selectedTab} aria-busy={loading}>
+                    {loading && <p className="directory-message" role="status">Loading {selectedTab.toLowerCase()}…</p>}
+                    {warning && <div className="directory-message" role="status">
+                        <p>Showing saved directory data. {warning}</p>
+                        <button className="btn secondary" onClick={retry}>Refresh data</button>
+                    </div>}
+                    {error && <div className="directory-message" role="alert">
+                        <p>{error}</p><button className="btn" onClick={retry}>Try again</button>
+                    </div>}
+                    {!loading && !error && filtered.length === 0 && <div className="directory-message" role="status">
+                        <p>{items.length ? 'No matches. Try another search or clear your filters.' : `No ${selectedTab.toLowerCase()} listed yet.`}</p>
+                        {items.length > 0 && <button className="btn secondary" onClick={() => { setSearchQuery(''); changeFilters([]) }}>Clear search and filters</button>}
+                    </div>}
+                    {!loading && !error && filtered.map(item => <Card key={item.id} id={item.id} name={item.name}
+                        subtitle={getSubtitle(item)} description={item.description} category={item.category}
+                        icon_url={item.icon_url} application_start={item.application_start}
+                        registration_deadline={item.registration_deadline} event_start={item.event_start}
+                        event_end={item.event_end} participation_type={item.participation_type}
+                        open_to={formatOpenTo(item.open_to)} domains={item.domains} apply_link={item.apply_link} now={now} />)}
+                </section>
+            </main>
+            <AuthControl onManage={() => setDashboardOpen(true)} />
+            {dashboardOpen && user && <ManagementDashboard onClose={closeDashboard} />}
         </>
     )
 }
-
 export default App
